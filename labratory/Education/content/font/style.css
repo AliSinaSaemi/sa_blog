@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* YEKAN */
+@font-face {
+	font-family: 'yekan';
+	src: url('../../content/font/Yekan.eot');
+	src: url('../../content/font/Yekan.eot?#iefix') format("embedded-opentype"), url('../../content/font/Yekan.woff') format("woff"), url('../../content/font/Yekan.ttf') format("truetype"), url('../../content/font/Yekan.svg#BYekan') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* HOMA */
+@font-face {
+	font-family: 'homa';
+	src: url('../../content/font/Homa.eot');
+	src: url('../../content/font/Homa.eot?#iefix') format("embedded-opentype"), url('../../content/font/Homa.woff') format("woff"), url('../../content/font/Homa.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* SAMIM */
+@font-face {
+	font-family: 'samim';
+	src: url('../../content/font/Samim.eot');
+	src: url('../../content/font/Samim.eot?#iefix') format("embedded-opentype"), url('../../content/font/Samim.woff') format("woff"), url('../../content/font/Samim.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* BOLD of SAMIM */
+@font-face {
+	font-family: 'samim_bold';
+	src: url('../../content/font/Samim-Bold.eot');
+	src: url('../../content/font/Samim-Bold.eot?#iefix') format("embedded-opentype"), url('../../content/font/Samim-Bold.woff') format("woff"), url('../../content/font/Samim-Bold.ttf') format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}

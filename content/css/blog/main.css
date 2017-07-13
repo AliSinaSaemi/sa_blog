@@ -1,0 +1,163 @@
+/********************************
+
+            GLOBAL
+
+********************************/
+
+.text_bold,
+.yekanBold {
+  font-weight: bold;
+}
+
+.yekan {
+  font-family: "yekan";
+  font-weight: 200
+}
+
+.yekanBold {
+  font-family: "yekan";
+}
+
+.homa {
+  font-family: "homa";
+}
+
+.samim {
+  font-family: "samim";
+}
+
+.laila {
+  font-family: 'laila', sans-serif;
+}
+
+.samimBold {
+  font-family: "samim_bold";
+}
+
+.text-jutify {
+  text-align: justify;
+}
+
+.font-playfair {
+  font-family: 'homa', sans-serif;
+  font-weight: 300;
+}
+
+h1.heading-style-1,
+h2.heading-style-1,
+h3.heading-style-1,
+h4.heading-style-1,
+h5.heading-style-1,
+h6.heading-style-1 {
+  font-size: 35px;
+  line-height: 46px;
+  margin-bottom: 29px;
+  font-weight: bold
+}
+
+h1.heading-style-2,
+h2.heading-style-2,
+h3.heading-style-2,
+h4.heading-style-2,
+h5.heading-style-2,
+h6.heading-style-2 {
+  font-size: 29px;
+  line-height: 67.5px;
+  margin-bottom: 20px;
+  font-weight: bold
+}
+
+h1.heading-style-3,
+h2.heading-style-3,
+h3.heading-style-3,
+h4.heading-style-3,
+h5.heading-style-3,
+h6.heading-style-3 {
+  font-size: 23px;
+  line-height: 52.5px;
+  margin-bottom: 20px;
+  font-weight: bold
+}
+
+h1.heading-style-4,
+h2.heading-style-4,
+h3.heading-style-4,
+h4.heading-style-4,
+h5.heading-style-4,
+h6.heading-style-4 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  font-weight: bold
+}
+
+h1.heading-style-5,
+h2.heading-style-5,
+h3.heading-style-5,
+h4.heading-style-5,
+h5.heading-style-5,
+h6.heading-style-5 {
+  font: bold 16px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 11px;
+  font-weight: bold
+}
+
+h1.heading-style-6,
+h2.heading-style-6,
+h3.heading-style-6,
+h4.heading-style-6,
+h5.heading-style-6,
+h6.heading-style-6 {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-weight: bold
+}
+
+
+/********************************
+
+            HEADER
+
+********************************/
+
+.navbar.bg-faded {
+  background-color: #7d8488;
+}
+
+.navbar.navbar-light .nav-item a {
+  color: #fff;
+  transition: .35s;
+}
+
+.navbar.navbar-light .nav-item a:hover {
+  color: #dcdcdc;
+}
+
+.menu-head {
+  margin-bottom: 0;
+  margin-top: 8px
+}
+
+
+/********************************
+
+            MAIN
+
+********************************/
+main {
+  z-index: 1000;
+}
+
+
+/********************************
+
+            FOOTER
+
+********************************/
+footer {
+  z-index: 1000;
+}
