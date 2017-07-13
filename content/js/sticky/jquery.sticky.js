@@ -91,7 +91,7 @@
               .css('width', newWidth)
               .css('position', 'fixed')
               .css('top', newTop)
-              .css('z-index', s.zIndex);
+              .css('z-index', '2000');
 
             s.stickyElement.parent().addClass(s.className);
 
@@ -122,13 +122,13 @@
               .css('position', 'absolute')
               .css('top', '')
               .css('bottom', 0)
-              .css('z-index', '');
+              .css('z-index', '2000');
           } else {
             s.stickyElement
               .css('position', 'fixed')
               .css('top', newTop)
               .css('bottom', '')
-              .css('z-index', s.zIndex);
+              .css('z-index', '2000');
           }
         }
       }
@@ -246,7 +246,7 @@
                 'position': '',
                 'top': '',
                 'float': '',
-                'z-index': ''
+                'z-index': '2000'
               })
             ;
           }
