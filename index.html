@@ -11,6 +11,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
 
+  <!-- Google font (Lobster, Nunito:700) -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito:700" rel="stylesheet">
+
   <!-- Bootstrap core CSS -->
   <link href="content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
@@ -22,11 +25,30 @@
 
 </head>
 
-<body>
+<body class="fixed-sn grey-skin">
 
   <header>
     <!--Navbar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <div id='cssmenu'>
+        <h2 class="heading-style-1 text-center brand-logo">
+          Sepehr
+          <br>
+          Akbarzadeh
+        </h2>
+        <ul>
+          <li><a href='#'><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+          <li class='active has-sub'><a href='#'><i class="fa fa-cube" aria-hidden="true"></i><span>Products</span></a>
+            <ul>
+              <li><a href='#'><i class="fa fa-play" aria-hidden="true"></i><span>Product 1</span></a></li>
+              <li><a href='#'><i class="fa fa-play" aria-hidden="true"></i><span>Product 2</span></a></li>
+            </ul>
+          </li>
+          <li><a href='#'><i class="fa fa-user" aria-hidden="true"></i><span>About</span></a></li>
+          <li class='last'><a href='#'><i class="fa fa-tty" aria-hidden="true"></i><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <!-- #cssmenu -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -54,6 +76,7 @@
           </li>
         </ul>
       </div>
+      <!-- / social nav -->
     </nav>
   </header>
 
@@ -498,7 +521,7 @@
                 <div class="col-8 mb-1">
 
                   <!--Post data-->
-                  <div class="mb-2-half ">
+                  <div class="mb-2-half">
                     <p class="text-muted float-left"><i class="fa fa-clock-o"></i> 20/01/2017</p>
                     <span class="text-muted float-right"><i class="fa fa-comments-o"></i> 215</span>
                   </div>
@@ -536,7 +559,7 @@
                 <div class="col-8 mb-1">
 
                   <!--Post data-->
-                  <div class="mb-2-half ">
+                  <div class="mb-2-half">
                     <p class="text-muted float-left"><i class="fa fa-clock-o"></i> 19/01/2017</p>
                     <span class="text-muted float-right"><i class="fa fa-comments-o"></i> 176</span>
                   </div>
@@ -574,7 +597,7 @@
                 <div class="col-8 mb-1">
 
                   <!--Post data-->
-                  <div class="mb-2-half ">
+                  <div class="mb-2-half">
                     <p class="text-muted float-left"><i class="fa fa-clock-o"></i> 18/01/2017</p>
                     <span class="text-muted float-right"><i class="fa fa-comments-o"></i> 190</span>
                   </div>
@@ -612,7 +635,7 @@
                 <div class="col-8 mb-1">
 
                   <!--Post data-->
-                  <div class="mb-2-half ">
+                  <div class="mb-2-half">
                     <p class="text-muted float-left"><i class="fa fa-clock-o"></i> 17/01/2017</p>
                     <span class="text-muted float-right"><i class="fa fa-comments-o"></i> 278</span>
                   </div>
@@ -650,7 +673,7 @@
                 <div class="col-8 mb-1">
 
                   <!--Post data-->
-                  <div class="mb-2-half ">
+                  <div class="mb-2-half">
                     <p class="text-muted float-left"><i class="fa fa-clock-o"></i> 16/01/2017</p>
                     <span class="text-muted float-right"><i class="fa fa-comments-o"></i> 321</span>
                   </div>
@@ -955,12 +978,14 @@
           </p>
           <!-- Contact -->
 
-          <!--Facebook-->
-          <a type="button" class="btn-floating btn-small btn-fb waves-effect waves-light"><i class="fa fa-facebook"></i></a>
-          <!--Twitter-->
-          <a type="button" class="btn-floating btn-small btn-tw waves-effect waves-light"><i class="fa fa-twitter"></i></a>
-          <!--Linkedin-->
-          <a type="button" class="btn-floating btn-small btn-li waves-effect waves-light"><i class="fa fa-linkedin"></i></a>
+          <ul class="inline-ul circle-icons">
+            <!--Facebook-->
+            <li><a class="fb-ic"><i class="fa fa-facebook"> </i></a></li>
+            <!--Twitter-->
+            <li><a class="tw-ic"><i class="fa fa-twitter"> </i></a></li>
+            <!--Google +-->
+            <li><a class="gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+          </ul>
 
         </div>
         <!--/Second column-->
@@ -1003,7 +1028,7 @@
 
   <!-- Sticky -->
   <script type="text/javascript" src="content/js/sticky/jquery.sticky.js"></script>
-  
+
   <!-- Tooltips -->
   <script type="text/javascript" src="content/js/mdb/tether.js"></script>
 

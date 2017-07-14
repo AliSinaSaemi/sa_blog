@@ -4,6 +4,17 @@
 
 ********************************/
 
+body {
+  transition: background-color .5s;
+  margin: 0;
+}
+
+html,
+body,
+#cssmenu {
+  height: 100%;
+}
+
 .text_bold,
 .yekanBold {
   font-weight: bold;
@@ -117,6 +128,14 @@ h6.heading-style-6 {
   font-weight: bold
 }
 
+.dis-none {
+  display: none;
+}
+
+.dis-blc {
+  display: block
+}
+
 
 /********************************
 
@@ -141,6 +160,12 @@ h6.heading-style-6 {
   background-color: #7d8488;
 }
 
+.navbar .brand-logo {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 0;
+  margin: 15px auto;
+}
+
 .navbar.navbar-light .nav-item a {
   color: #fff;
   transition: .35s;
@@ -153,6 +178,247 @@ h6.heading-style-6 {
 .menu-head {
   margin-bottom: 0;
   margin-top: 8px
+}
+
+
+/* Side nav test */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+.width-250 {
+  width: 250;
+}
+
+.no-width {
+  width: 0;
+}
+
+#cssmenu {
+  position: fixed;
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  line-height: 1;
+  left: 0;
+  top: 0;
+  width: 250px;
+  background: url(https://mdbootstrap.com/img/Photos/Others/sidenav1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  z-index: 2100
+}
+
+.align-right {
+  float: right;
+}
+
+#cssmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  font-family: 'Nunito', sans-serif;
+}
+
+#cssmenu .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#cssmenu .has-sub li a .fa {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+#cssmenu ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cssmenu > ul > li > a {
+  color: #dddddd;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px;
+  background: transparent;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 300;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  position: relative;
+}
+
+#cssmenu > ul > li:first-child > a {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#cssmenu > ul > li:last-child > a {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.open > a,
+#cssmenu > ul > li.active > a {
+  background: rgba(21, 21, 21, 0.35);
+  color: #ffffff;
+}
+
+#cssmenu ul > li.has-sub > a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 13px solid rgba(21, 21, 21, 0.21);
+  border-bottom: 13px solid transparent;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  left: 0;
+  bottom: -26px;
+  bottom: -26px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#cssmenu ul > li.has-sub > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 13px solid rgba(21, 21, 21, 0.17);
+  border-bottom: 13px solid transparent;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  left: 0;
+  bottom: -12px;
+  bottom: -26px;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#cssmenu ul > li.has-sub::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #dddddd;
+  z-index: 2;
+  right: 20px;
+  top: 24.5px;
+  pointer-events: none;
+}
+
+#cssmenu ul > li:hover::after,
+#cssmenu ul > li.active::after,
+#cssmenu ul > li.open::after {
+  border-top-color: #ffffff;
+}
+
+#cssmenu ul > li.has-sub.open > a::after {
+  opacity: 1;
+  bottom: -26px;
+}
+
+#cssmenu ul > li.has-sub.open > a::before {
+  opacity: 1;
+  bottom: -26px;
+}
+
+#cssmenu ul ul {
+  display: none;
+}
+
+#cssmenu ul ul li {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#cssmenu ul ul li a {
+  background: rgba(241, 241, 241, 0);
+  display: block;
+  position: relative;
+  font-size: 15px;
+  padding: 14px 20px;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  margin-left: 10px;
+}
+
+#cssmenu ul ul li:first-child > a {
+  padding-top: 18px;
+  margin-top: 15px;
+}
+
+#cssmenu ul ul ul li {
+  border: 0;
+}
+
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+  color: #a7a7a7;
+}
+
+#cssmenu ul ul > li.has-sub > a::after {
+  border-top: 13px solid #dddddd;
+}
+
+#cssmenu ul ul > li.has-sub > a::before {
+  border-top: 13px solid #e4e4e4;
+}
+
+#cssmenu ul ul ul li a {
+  padding-left: 30px;
+}
+
+#cssmenu ul ul > li.has-sub::after {
+  top: 18.5px;
+  border-width: 6px;
+  border-top-color: #777777;
+}
+
+#cssmenu ul ul > li:hover::after,
+#cssmenu ul ul > li.active::after,
+#cssmenu ul ul > li.open::after {
+  border-top-color: #666666;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+.sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
 }
 
 
@@ -254,13 +520,58 @@ main {
 }
 
 .text-hover {
-    color: #424242;
-    transition: 0.4s;
+  color: #424242;
+  transition: 0.4s;
 }
 
 .text-hover:hover {
-    color: #a7a5a5;
+  color: #a7a5a5;
 }
+
+.grey-skin .btn-default,
+.grey-skin .card .btn-action {
+  background: #393b44;
+}
+
+.grey-skin .btn-default:hover,
+.grey-skin .btn-default:focus,
+.grey-skin .card .btn-action:hover,
+.grey-skin .card .btn-action:focus {
+  background-color: #454752 !important;
+}
+
+.mb-2-half {
+  margin-bottom: 2.5rem;
+}
+
+.archive ul {
+  margin-top: -1rem;
+  margin-bottom: 0;
+}
+
+.archive ul li:first-of-type {
+  border-top: none;
+}
+
+.archive ul li {
+  padding-top: 0.8rem;
+  border-top: 1px solid #eceeef;
+  padding-bottom: 0.3rem;
+}
+
+.archive ul li h5 a {
+  color: #373a3c;
+  -webkit-transition: color 0.65s;
+  -moz-transition: color 0.65s;
+  -o-transition: color 0.65s;
+  -ms-transition: color 0.65s;
+  transition: color 0.65s;
+}
+
+.sidebar-imgs ul.instagram-photos li {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
 
 /********************************
 
@@ -270,4 +581,20 @@ main {
 
 footer {
   z-index: 1000;
+}
+
+footer.page-footer .view .mask p {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.flex-center p,
+.card-overlay p,
+.section.team-section .avatar p {
+  margin: 0;
+}
+
+.white-text {
+  color: #FFFFFF !important;
 }
