@@ -5411,7 +5411,7 @@ button:focus {
 .btn-primary {
   background: #4285F4; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #5a95f5 !important; }
+    background-color: #ad495c !important; }
   .btn-primary.active {
     background-color: #0b51c5 !important; }
 

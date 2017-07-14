@@ -1,1 +1,1 @@
-$('.navbar').sticky();
+$(".navbar").sticky({topSpacing:0});
