@@ -163,7 +163,20 @@ h6.heading-style-6 {
 .navbar .brand-logo {
   font-family: 'Lobster', cursive;
   margin-bottom: 0;
-  margin: 15px auto;
+  margin: 45px 0 20px auto;
+}
+
+.navbar .brand-logo i {
+  color: #43c3f3;
+}
+
+.navbar .brand-logo span {
+  color: #6b5cd6;
+}
+
+.navbar .brand-logo span,
+.navbar .brand-logo i {
+  text-shadow: -2px 4px 2px #3d4042;
 }
 
 .navbar.navbar-light .nav-item a {
@@ -184,12 +197,14 @@ h6.heading-style-6 {
 /* Side nav test */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
-.width-250 {
-  width: 250;
+.width_nav {
+  width: 250px;
+  opacity: 1
 }
 
-.no-width {
+.no_width_nav {
   width: 0;
+  opacity: 0
 }
 
 #cssmenu {
@@ -199,12 +214,31 @@ h6.heading-style-6 {
   line-height: 1;
   left: 0;
   top: 0;
-  width: 250px;
-  background: url(https://mdbootstrap.com/img/Photos/Others/sidenav1.jpg);
+  background-color: black;
+  background: url(../../img/sidenav/sidenav2.jpg);
+  -webkit-transition: 0.5s;
+  transition: 0.3s;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
   z-index: 2100
+}
+
+.closebtn {
+  position: absolute;
+  right: -15px;
+  top: 15px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+.closebtn .fa {
+  margin-top: 3px;
+  margin-left: 3px;
 }
 
 .align-right {
@@ -224,6 +258,35 @@ h6.heading-style-6 {
   margin-right: 10px;
 }
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.grey-skin input[type="text"]:focus:not([readonly]) {
+  border-color: rgba(187, 33, 77, 0.79);
+  box-shadow: 0 1px 0 0 rgba(187, 33, 77, 0.79);
+}
+
+.navbar-light form input[type=text] {
+  border-bottom: 1px solid #ffffff;
+  font-family: 'Nunito', sans-serif;
+  padding: 20px;
+}
+
+.side-nav-form input {
+  padding-left: 30px;
+  color: #fff;
+}
+
+.navbar-light form .form-control {
+  color: #fff;
+}
+
+.navbar form input {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 #cssmenu .has-sub li a .fa {
   font-size: 12px;
   margin-right: 10px;
@@ -241,7 +304,7 @@ h6.heading-style-6 {
 }
 
 #cssmenu > ul > li > a {
-  color: #dddddd;
+  color: #fff;
   text-transform: uppercase;
   display: block;
   padding: 20px;
@@ -407,18 +470,8 @@ h6.heading-style-6 {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
   text-align: center;
-}
-
-.sidenav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 120vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 997;
+  z-index: 2050;
 }
 
 
