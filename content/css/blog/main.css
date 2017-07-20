@@ -488,17 +488,17 @@ main {
   transition: all 0.4s;
 }
 
-.fb-ic i.fa-facebook:hover {
+.homepage .fb-ic i.fa-facebook:hover {
   background-color: #4367ab !important;
   color: #fff;
 }
 
-.tw-ic i.fa-twitter:hover {
+.homepage .tw-ic i.fa-twitter:hover {
   background-color: #4dd7e6 !important;
   color: #fff;
 }
 
-.gplus-ic i.fa-google-plus:hover {
+.homepage .gplus-ic i.fa-google-plus:hover {
   background-color: #e64d4d !important;
   color: #fff;
 }
@@ -1209,6 +1209,34 @@ img {
 
 .comments-list h4,
 .reply-form h4 {
+  text-align: center;
+}
+
+.grey-skin .team-page-socials .fa {
+  color: #b0bec5;
+  -webkit-transition: color 0.65s;
+  -moz-transition: color 0.65s;
+  -o-transition: color 0.65s;
+  -ms-transition: color 0.65s;
+  transition: color 0.65s;
+}
+
+.icons-sm {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.team-page-socials i.fa:hover {
+  color: #37474f;
+  background-color: transparent;
+}
+
+.section .section-description {
+  color: #757575;
+  margin-bottom: 4rem;
+  margin-left: 15%;
+  margin-right: 15%;
   text-align: center;
 }
 
