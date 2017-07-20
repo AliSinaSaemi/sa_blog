@@ -648,7 +648,6 @@ main {
 }
 
 .btn {
-  border-radius: 2px;
   border: 0;
   transition: .2s ease-out;
   color: #fff !important;
