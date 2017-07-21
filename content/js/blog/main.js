@@ -38,7 +38,7 @@ These are for sidenav dropdown animation
 // Show cssmenu
 var $overlay = $('<div class="overlay"></div>');
 $("body").append($overlay);
-$('button').click(function() {
+$('.fa-bars').click(function() {
   $('.cssmenu').addClass('cssmenuShow');
   $overlay.fadeIn(300);
 });
