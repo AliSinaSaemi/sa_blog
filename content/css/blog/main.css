@@ -4,6 +4,10 @@
 
 ********************************/
 
+body {
+  margin: 0;
+}
+
 html,
 body,
 .cssmenu {
@@ -155,6 +159,21 @@ h6 {
   transition: .3s;
 }
 
+.navbar form input {
+  padding: 15px;
+  color: #fff;
+}
+
+.cssmenu .search-form input[type=text] {
+  border-bottom: 1px solid #fff;
+  font-weight: 300;
+  padding-left: 30px;
+}
+
+.cssmenu .search-form .form-control {
+  color: #fff;
+}
+
 .is-sticky .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -162,6 +181,12 @@ h6 {
 
 .navbar.bg-faded {
   background-color: #7d8488;
+}
+
+.sa-close-btn {
+  width: 35px;
+  height: 35px;
+  background-color: #969ba1;
 }
 
 .navbar .brand-logo {
@@ -187,6 +212,7 @@ h6 {
   margin-bottom: 0;
   margin-top: 8px
 }
+
 .width-250 {
   width: 250;
 }
@@ -197,10 +223,6 @@ h6 {
 
 
 /* Base Styles */
-
-body {
-  margin: 0;
-}
 
 .cssmenu ul,
 .cssmenu li,
@@ -262,7 +284,47 @@ body {
   line-height: 1.3;
 }
 
-.cssmenu > ul > li:first-child {
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search-md]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #51acbd;
+  box-shadow: 0 1px 0 0 #51acbd;
+}
+
+form.search-form input.form-control::placeholder {
+  color: #fff;
+}
+
+.cssmenu ul li.sa-close-btn {
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  right: -27px;
+  z-index: 2120;
+  color: #fff;
+  transition: .3s;
+}
+
+.cssmenu ul li.sa-close-btn i {
+  margin-top: 7px;
+}
+
+.cssmenu ul li.sa-close-btn:hover  {
+  background-color: #51acbd;
+}
+
+.cssmenu > ul > li:nth-child(2) {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 7%;
@@ -270,14 +332,13 @@ body {
   margin: 0
 }
 
-.cssmenu > ul > li:first-child img {
-  padding-right: 50px;
+.cssmenu > ul > li:nth-child(2) img {
   padding-top: 7%;
   padding-bottom: 7%;
   width: 100%;
 }
 
-.cssmenu > ul > li:first-child > a:hover {
+.cssmenu > ul > li:nth-child(2) > a:hover {
   background-color: transparent;
 }
 
@@ -292,18 +353,18 @@ body {
 }
 
 .cssmenu > ul > li > a:hover {
-  background: rgba(187, 33, 77, 0.79);
+  background: rgba(65, 203, 226, 0.62);
 }
 
 .cssmenu > ul > li > a:focus {
-  background: rgba(187, 33, 77, 0.79);
+  background: rgba(65, 203, 226, 0.62);
 }
 
 .nav-item-ic {
   position: absolute;
   font-size: 18px;
   top: 14px;
-  left: 7px;
+  left: 15px;
 }
 
 .cssmenu > ul > li > a {
@@ -317,7 +378,7 @@ body {
   padding: 12px 10px;
   border-radius: 4px;
   font-size: 18px;
-  padding-left: 35px;
+  padding-left: 43px;
 }
 
 .cssmenu > ul > li > a:hover {
@@ -341,10 +402,11 @@ body {
   right: 20px;
   bottom: 15px;
   transition: .3s;
+  font-size: 20px;
 }
 
 .cssmenu > ul > li.has-sub.active > a .open-dropdowner-nav {
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 
@@ -388,28 +450,7 @@ body {
 
 .cssmenu ul ul a:hover {
   color: #fff;
-  background-color: rgba(187, 33, 77, 0.79);
-}
-
-#overlay {
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  text-align: center;
-}
-
-.sidenav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 120vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 997;
+  background-color: rgba(65, 203, 226, 0.62);
 }
 
 
@@ -421,7 +462,13 @@ body {
 
 main {
   z-index: 1000;
-  margin-top: 40px;
+  padding-top: 40px;
+  margin-left: 0;
+  transition: .5s;
+}
+
+.mainPartner {
+  margin-left: 250px;
 }
 
 .btn-primary {

@@ -36,15 +36,18 @@ These are for sidenav dropdown animation
 })(jQuery);
 
 // Show cssmenu
-var $overlay = $('<div class="overlay"></div>');
-$("body").append($overlay);
-$('.fa-bars').click(function() {
+$('.menu-bars').click(function() {
   $('.cssmenu').addClass('cssmenuShow');
-  $overlay.fadeIn(300);
+  $('main').addClass('mainPartner');
 });
-$overlay.click(function(){
+$('main').click(function(){
   $('.cssmenu').removeClass('cssmenuShow');
-  $overlay.fadeOut(300);
+  $('main').removeClass('mainPartner');
+});
+
+$('.sa-close-btn').click(function(){
+  $('.cssmenu').removeClass('cssmenuShow');
+  $('main').removeClass('mainPartner');
 });
 
 
