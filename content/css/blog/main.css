@@ -188,6 +188,7 @@ h6 {
   background-color: #00bcd4;
   border-radius: 50px;
   text-align: center;
+  box-shadow: 1px 1px 158px rgba(0, 0, 0, 0.72);
 }
 
 .sa-small-close-navbar .fa-bars {
@@ -278,7 +279,7 @@ h6 {
   overflow: scroll;
   overflow-x: hidden
 }
-/*        */
+
 .cssmenu::-webkit-scrollbar {
   background-color: transparent;
   width: 5px;
@@ -288,8 +289,6 @@ h6 {
   background-color: rgba(0, 0, 0, 0.25);
   width: 15px;
 }
-
-/*            */
 
 .cssmenuShow {
   left: 0;
@@ -644,6 +643,26 @@ main {
 
 .sidebar-imgs ul.instagram-photos li {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-imgs ul.instagram-photos li {
+  display: inline-block;
+  max-width: 106px;
+  margin: 4px;
+}
+
+.sidebar-imgs ul.instagram-photos li img {
+  margin: 0;
+}
+
+.view:not(.hm-zoom) {
+  overflow: visible;
+}
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
 }
 
 .section-blog-fw .jumbotron,
@@ -1350,9 +1369,6 @@ footer.page-footer .view .mask p {
 
 ********************************/
 
-
-/********* NAVBAR ***********/
-
 @media (max-width: 992px) {
   .navbar {
     display: none;
@@ -1362,8 +1378,8 @@ footer.page-footer .view .mask p {
     left: -100%;
   }
   .cssmenu > ul > li:nth-child(2) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 40%;
+    padding-right: 40%;
   }
   .cssmenu ul li.sa-close-btn {
     right: -1px;
@@ -1374,8 +1390,73 @@ footer.page-footer .view .mask p {
 }
 
 @media (max-width: 575px) {
+  .sa-small-text-center {
+    text-align: center;
+  }
+  .cssmenu > ul > li:nth-child(2) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
   main {
     padding-top: 20px;
+  }
+  section.section h2 {
+    font-size: 20px;
+  }
+  section.section h4 {
+    font-size: 18px;
+  }
+  .classic-blog-listing .post-data h6 {
+    font-size: 12px;
+  }
+  .carousel .carousel-indicators li {
+    max-width: 5px;
+    height: 5px;
+  }
+  .main-heading {
+    font-size: 18px;
+  }
+  .author-box img,
+  .comments-list img,
+  .reply-form img {
+    display: block;
+    margin: 20px auto;
+  }
+  .author-box .sa-author-content {
+    text-align: center;
+  }
+  .carousel-multi-item .carousel-indicators .active {
+    height: 15px;
+    max-width: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reply-form img,
+  .comments-list img {
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    padding-top: 20px;
+  }
+  section.section h2 {
+    font-size: 20px;
+  }
+  .classic-blog-listing .post-data h6 {
+    font-size: 12px;
+  }
+  .carousel .carousel-indicators li {
+    max-width: 5px;
+    height: 5px;
+  }
+  .sidebar-imgs {
+    display: none;
+  }
+  .carousel-caption {
+    display: none;
   }
 }
 
