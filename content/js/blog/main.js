@@ -3,7 +3,9 @@
 This for make navigation sticky 
 
 */
-$(".navbar").sticky({topSpacing:0});
+$(".navbar").sticky({
+  topSpacing: 0
+});
 
 
 
@@ -35,20 +37,41 @@ These are for sidenav dropdown animation
   });
 })(jQuery);
 
-// Show cssmenu
-$('.menu-bars').click(function() {
+// Show cssmenu in big devises
+$('.menu-bars').click(function (e) {
+  e.preventDefault();
   $('.cssmenu').addClass('cssmenuShow');
   $('main').addClass('mainPartner');
 });
-$('main').click(function(){
+$('main').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
   $('main').removeClass('mainPartner');
 });
 
-$('.sa-close-btn').click(function(){
+$('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
   $('main').removeClass('mainPartner');
 });
 
+$('footer').click(function () {
+  $('.cssmenu').removeClass('cssmenuShow');
+  $('main').removeClass('mainPartner');
+});
 
+// Show cssmenu in small devises
+$('.sa-header-button').click(function (e) {
+  e.preventDefault();
+  $('.cssmenu').addClass('cssmenuShow');
+});
 
+$('main').click(function () {
+  $('.cssmenu').removeClass('cssmenuShow');
+});
+
+$('.sa-close-btn').click(function () {
+  $('.cssmenu').removeClass('cssmenuShow');
+});
+
+$('footer').click(function () {
+  $('.cssmenu').removeClass('cssmenuShow');
+});

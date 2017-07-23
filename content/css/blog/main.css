@@ -164,16 +164,6 @@ h6 {
   color: #fff;
 }
 
-.cssmenu .search-form input[type=text] {
-  border-bottom: 1px solid #fff;
-  font-weight: 300;
-  padding-left: 30px;
-}
-
-.cssmenu .search-form .form-control {
-  color: #fff;
-}
-
 .is-sticky .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -181,6 +171,30 @@ h6 {
 
 .navbar.bg-faded {
   background-color: #7d8488;
+}
+
+.sa-header-button {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  z-index: 2000;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sa-small-close-navbar {
+  width: 80px;
+  height: 80px;
+  background-color: #00bcd4;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.sa-small-close-navbar .fa-bars {
+  color: #fff;
+  margin-top: 32px;
+  margin-left: 11px;
+  font-size: 28px;
 }
 
 .sa-close-btn {
@@ -221,8 +235,15 @@ h6 {
   width: 0;
 }
 
+.cssmenu .search-form input[type=text] {
+  border-bottom: 1px solid #fff;
+  font-weight: 300;
+  padding-left: 30px;
+}
 
-/* Base Styles */
+.cssmenu .search-form .form-control {
+  color: #fff;
+}
 
 .cssmenu ul,
 .cssmenu li,
@@ -253,8 +274,22 @@ h6 {
   margin: 0;
   background-color: black;
   line-height: 1;
-  left: -250px;
+  left: -275px;
+  overflow: scroll;
+  overflow-x: hidden
 }
+/*        */
+.cssmenu::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.cssmenu::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 15px;
+}
+
+/*            */
 
 .cssmenuShow {
   left: 0;
@@ -310,7 +345,8 @@ form.search-form input.form-control::placeholder {
   border-radius: 50px;
   cursor: pointer;
   position: absolute;
-  right: -27px;
+  right: -7px;
+  top: -7px;
   z-index: 2120;
   color: #fff;
   transition: .3s;
@@ -320,7 +356,7 @@ form.search-form input.form-control::placeholder {
   margin-top: 7px;
 }
 
-.cssmenu ul li.sa-close-btn:hover  {
+.cssmenu ul li.sa-close-btn:hover {
   background-color: #51acbd;
 }
 
@@ -1305,4 +1341,46 @@ footer.page-footer .view .mask p {
 
 .white-text {
   color: #FFFFFF !important;
+}
+
+
+/********************************
+
+            MEDIA
+
+********************************/
+
+
+/********* NAVBAR ***********/
+
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .cssmenu {
+    width: 100%;
+    left: -100%;
+  }
+  .cssmenu > ul > li:nth-child(2) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .cssmenu ul li.sa-close-btn {
+    right: -1px;
+  }
+  .cssmenuShow {
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sa-header-button {
+    display: none;
+  }
 }
