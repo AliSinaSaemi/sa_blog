@@ -347,6 +347,10 @@ textarea.md-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #51acbd;
 }
 
+textarea.md-textarea {
+  text-align: right;
+}
+
 form.search-form input.form-control::placeholder {
   color: #fff;
 }
@@ -873,7 +877,7 @@ main {
 .section-blog-fw .post-text {
   margin-left: 10%;
   margin-right: 10%;
-  text-align: justify;
+  text-align: right;
 }
 
 .post-pictures img {
@@ -1001,6 +1005,10 @@ ul.instagram-photos li img,
 .blog-author-box h4 {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+
+.sa-author-content {
+  text-align: right
 }
 
 .personal-sm {
@@ -1355,6 +1363,10 @@ img {
   text-align: center;
 }
 
+.sa-small-text-center {
+  text-align: right
+}
+
 .grey-skin .team-page-socials .fa {
   color: #b0bec5;
   -webkit-transition: color 0.65s;
@@ -1490,6 +1502,9 @@ footer.page-footer .view .mask p {
   .carousel-multi-item .carousel-indicators .active {
     height: 15px;
     max-width: 15px;
+  }
+  .sa-footer-detail {
+    text-align: center;
   }
 }
 
