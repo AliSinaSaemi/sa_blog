@@ -1,0 +1,21 @@
+header{
+  position: fixed;
+  width: 100%;
+  font-size: 72px;
+  padding: 50px;
+  background: #335C7D;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header.sticky {
+  font-size: 24px;
+  padding: 20px;
+  background: #efc47D;
+}

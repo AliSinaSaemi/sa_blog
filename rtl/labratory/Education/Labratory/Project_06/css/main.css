@@ -1,0 +1,32 @@
+
+/*
+
+.track .card-box:before {
+    height: 10px;
+    left: 20px;
+    right: 20px;
+}
+tracks.css:16460
+.track .card-box:after, .track .card-box:before {
+    content: "";
+    background: #fff;
+    height: 5px;
+    display: block;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07) inset, 0 2px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    left: 10px;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+.track .card-box.card-link:hover:after {
+  height: 10px
+}
+
+.track .card-box.card-link:hover:before {
+  height: 20px
+}
+*/

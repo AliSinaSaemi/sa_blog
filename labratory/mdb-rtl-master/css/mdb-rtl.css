@@ -1,0 +1,93 @@
+/* optional */
+
+.content {
+  margin: 200px auto;
+}
+
+/* helper classes */
+
+.mr-l-auto {
+  margin-left: auto;
+}
+.mr-r-auto {
+  margin-right: auto;
+}
+.text-right {
+  text-align: right;
+}
+.f-r {
+  float: right;
+}
+
+
+/* MDB rtl navigation */
+
+@media (min-width: 992px) {
+  .navbar-toggleable-md>.container {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .navbar-toggleable-md .navbar-nav {
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar.navbar-dark .breadcrumb a,
+  .navbar.navbar-dark .navbar-nav .nav-item a {
+    text-align: right;
+  }
+  .navbar-nav .nav-link {
+    margin-left: auto;
+  }
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+.dropdown-toggle::after {
+  margin-right: .3em;
+}
+
+.dropdown-item {
+  text-align: right;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: inherit
+}
+
+.waves-effect {
+  direction: rtl;
+}
+
+/* MDB rtl form */
+
+.md-form {
+  direction: rtl;
+}
+
+.md-form label {
+  left: inherit;
+  right: 0;
+}
+
+.md-form .prefix~input,
+.md-form .prefix~textarea {
+  margin-right: 3rem;
+  margin-left: inherit;
+}
+
+.md-form .prefix~label {
+  margin-right: 3rem;
+  margin-left: inherit;
+}
+
+.modal-footer {
+  text-align: right;
+}

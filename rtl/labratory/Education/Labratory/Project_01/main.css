@@ -1,0 +1,14 @@
+.blue {
+  background: #98bf21;
+  opacity: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+    -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.pink {
+  opacity: 1;
+  width: 500px;
+}

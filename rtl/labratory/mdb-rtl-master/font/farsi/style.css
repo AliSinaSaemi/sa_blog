@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* YEKAN */
+@font-face {
+	font-family: 'yekan';
+	src: url('font/farsi/Yekan.eot');
+	src: url('font/farsi/Yekan.eot?#iefix') format("embedded-opentype"), url('font/farsi/Yekan.woff') format("woff"), url('font/farsi/Yekan.ttf') format("truetype"), url('font/farsi/Yekan.svg#BYekan') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
