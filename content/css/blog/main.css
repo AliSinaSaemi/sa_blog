@@ -173,6 +173,15 @@ h6 {
   background-color: #7d8488;
 }
 
+.sa-social-nav {
+  margin-left: auto;
+}
+
+.sa-sidenav-button {
+  position: absolute;
+  left: 16px;
+}
+
 .sa-header-button {
   position: fixed;
   top: -20px;
@@ -270,7 +279,6 @@ h6 {
   position: fixed;
   transition: .5s;
   z-index: 2000;
-  left: 0;
   top: 0;
   margin: 0;
   background-color: black;
@@ -332,6 +340,10 @@ input[type=search]:focus:not([readonly]),
 textarea.md-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #51acbd;
   box-shadow: 0 1px 0 0 #51acbd;
+}
+
+textarea.md-textarea {
+  text-align: right;
 }
 
 form.search-form input.form-control::placeholder {
@@ -414,6 +426,7 @@ form.search-form input.form-control::placeholder {
   border-radius: 4px;
   font-size: 18px;
   padding-left: 43px;
+  text-align: left;
 }
 
 .cssmenu > ul > li > a:hover {
@@ -460,27 +473,29 @@ form.search-form input.form-control::placeholder {
 }
 
 .cssmenu ul ul a {
-  padding: 10px 10px 10px 25px;
+  padding: 10px 25px 10px 10px;
   display: block;
   color: #fff;
   font-size: 12px;
   font-weight: normal;
   transition: .3s;
   border-radius: 5px;
+  text-align: right
 }
 
 .cssmenu ul ul a span {
-  margin-left: 15px;
+  margin-right: 15px;
   font-size: 15px;
 }
 
 .cssmenu ul ul a:before {
   content: "»";
   position: absolute;
-  left: 19px;
+  right: 19px;
   color: #fff;
   font-size: 21px;
-  bottom: 8px;
+  bottom: 4px;
+  transform: rotate(180deg);
 }
 
 .cssmenu ul ul a:hover {
@@ -506,6 +521,10 @@ main {
   margin-left: 250px;
 }
 
+.container.sa-container-fixer {
+  display: block;
+}
+
 .btn-primary {
   background: #ad495c;
 }
@@ -525,8 +544,14 @@ main {
   color: #616161;
 }
 
+.classic-blog-listing p {
+  text-align: right;
+}
+
 .classic-blog-listing .post-data {
   border-top: 1px solid #e0e0e0;
+  margin-bottom: 1.4rem;
+  padding-bottom: 15px;
 }
 
 .classic-blog-listing .post-data ul {
@@ -590,11 +615,14 @@ main {
 .post-border {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 1.4rem;
+  padding: 15px;
 }
 
 .text-hover {
   color: #424242;
   transition: 0.4s;
+  left: 15px;
+  position: absolute;
 }
 
 .text-hover:hover {
@@ -653,6 +681,25 @@ main {
 
 .sidebar-imgs ul.instagram-photos li img {
   margin: 0;
+}
+
+.md-form .prefix {
+  left: 0;
+}
+
+.md-form .prefix ~ input,
+.md-form .prefix ~ textarea {
+  margin-left: 3rem;
+  width: calc(100% - 3rem);
+  text-align: left;
+}
+
+.md-form label {
+  left: 0px;
+}
+
+.md-form .prefix ~ label {
+  margin-right: 4rem;
 }
 
 .view:not(.hm-zoom) {
@@ -816,7 +863,7 @@ main {
 .section-blog-fw .post-text {
   margin-left: 10%;
   margin-right: 10%;
-  text-align: justify;
+  text-align: left;
 }
 
 .post-pictures img {
@@ -944,6 +991,10 @@ ul.instagram-photos li img,
 .blog-author-box h4 {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+
+.sa-author-content {
+  text-align: left
 }
 
 .personal-sm {
@@ -1298,6 +1349,10 @@ img {
   text-align: center;
 }
 
+.sa-small-text-center {
+  text-align: left
+}
+
 .grey-skin .team-page-socials .fa {
   color: #b0bec5;
   -webkit-transition: color 0.65s;
@@ -1333,6 +1388,7 @@ img {
   line-height: 1.5;
   margin-top: 1.5rem;
   margin-bottom: 3.3rem;
+  text-align: left;
 }
 
 
@@ -1350,6 +1406,10 @@ footer.page-footer .view .mask p {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.sa-footer-detail {
+  text-align: left
 }
 
 .flex-center p,
@@ -1428,6 +1488,9 @@ footer.page-footer .view .mask p {
   .carousel-multi-item .carousel-indicators .active {
     height: 15px;
     max-width: 15px;
+  }
+  .sa-footer-detail {
+    text-align: center;
   }
 }
 
