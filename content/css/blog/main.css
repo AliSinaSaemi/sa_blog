@@ -1391,6 +1391,116 @@ img {
   text-align: left;
 }
 
+.btn-light-green-2 {
+  background: #00bfa5;
+}
+
+
+.view {
+  overflow: hidden !IMPORTANT;
+  position: relative;
+  cursor: default;
+}
+
+
+.intro-video video {
+  top: 550px;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+
+.view img, .view video {
+  display: block;
+  position: relative;
+}
+
+
+.view .full-bg-img, .view .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+
+video {
+  object-fit: contain;
+}
+
+.full-height, .full-height body, .full-height header, .full-height header .view {
+  height: 100%;
+}
+
+.background-grey {
+  background-color: #eee;
+}
+
+.sa-pt-50 {
+  padding-top: 50px;
+}
+
+.section.team-section .avatar .rounded-circle {
+  max-width: 170px;
+}
+
+.section.team-section .avatar {
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.section.team-section h4, .section.team-section h5 {
+  margin-bottom: 1rem;
+}
+
+
+.section h4 {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.tw-ic {
+  color: #55acee!important;
+}
+
+.ins-ic {
+  color: #2e5e86!important;
+}
+
+.fb-ic {
+  color: #3b5998!important;
+}
+
+
+.avatar {
+  margin-left: 33px;
+}
+
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
 
 /********************************
 

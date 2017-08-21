@@ -22,8 +22,10 @@ span,
 strong,
 em,
 i,
-b {
+b,
+li {
   direction: rtl;
+  font-family: 'yekan';
 }
 
 html,
@@ -246,6 +248,10 @@ h6 {
   padding-bottom: 7%;
 }
 
+.navbar .fa-envelope {
+  margin-left: 5px;
+}
+
 .navbar.navbar-light .nav-item a {
   color: #fff;
   transition: .35s;
@@ -272,6 +278,7 @@ h6 {
   border-bottom: 1px solid #fff;
   font-weight: 300;
   padding-left: 30px;
+  margin-left: -30px;
 }
 
 .cssmenu .search-form .form-control {
@@ -535,7 +542,7 @@ form.search-form input.form-control::placeholder {
 
 main {
   z-index: 1000;
-  padding-top: 40px;
+  margin-top: -40px;
   margin-left: 0;
   transition: .5s;
 }
@@ -1423,6 +1430,187 @@ img {
   text-align: right;
 }
 
+.btn-light-green-2 {
+  background: #00bfa5;
+}
+
+.view {
+  overflow: hidden !IMPORTANT;
+  position: relative;
+  cursor: default;
+}
+
+.intro-img img {
+  top: 220px;
+  left: 50%;
+  width: 101%;
+  height: 100%;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.view .full-bg-img,
+.view .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.fly-in-text {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.fly-in-text li {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  color: #fff;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+
+.fly-in-text li:last-child {
+  margin-right: 0;
+}
+
+.fly-in-text.sa-hidden li {
+  opacity: 0;
+}
+
+.fly-in-text.sa-hidden li:nth-child(1) {
+  transform: translateX(-50px) translateY(-50px);
+}
+
+.fly-in-text.sa-hidden li:nth-child(2) {
+  transform: translateX(-20px) translateY(-100px);
+}
+
+.fly-in-text.sa-hidden li:nth-child(3) {
+  transform: translateX(-25px) translateY(-80px);
+}
+
+.fly-in-text.sa-hidden li:nth-child(4) {
+  transform: translateX(10px) translateY(-80px);
+}
+
+.fly-in-text.sa-hidden li:nth-child(6),
+.fly-in-text.sa-hidden li:nth-child(7),
+.fly-in-text.sa-hidden li:nth-child(8),
+.fly-in-text.sa-hidden li:nth-child(9) {
+  transform: translateX(50px);
+}
+
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+  height: 100%;
+}
+
+.background-grey {
+  background-color: #eee;
+}
+
+.sa-pt-50 {
+  padding-top: 50px;
+}
+
+.section.team-section .avatar .rounded-circle {
+  max-width: 170px;
+}
+
+.section.team-section .avatar {
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.section.team-section h4,
+.section.team-section h5 {
+  margin-bottom: 1rem;
+}
+
+.section h4 {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.tw-ic {
+  color: #55acee!important;
+}
+
+.ins-ic {
+  color: #2e5e86!important;
+}
+
+.fb-ic {
+  color: #3b5998!important;
+}
+
+.avatar {
+  margin-left: 33px;
+}
+
+.leave-work .fa {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+hr.hr-light {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  opacity: 1;
+  transition: all 1.5s ease;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sa-about-banner-button {
+  font-size: 1rem;
+  padding: 0.85rem 2.13rem;
+  border: 0;
+  color: #fff !important;
+  margin: 6px;
+  white-space: normal !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 50px;
+}
+
+.subtext-header {
+  margin-bottom: 4rem
+}
+
 
 /********************************
 
@@ -1454,6 +1642,10 @@ footer.page-footer .view .mask p {
   color: #FFFFFF !important;
 }
 
+.video-banner-text .white-text {
+  margin-bottom: 200px;
+}
+
 
 /********************************
 
@@ -1461,7 +1653,45 @@ footer.page-footer .view .mask p {
 
 ********************************/
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .video-banner-text .white-text {
+    margin-bottom: 140px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .intro-img {
+    top: -10%;
+  }
+  .video-banner-text .white-text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  hr.opacity-hidden-lg-up {
+    width: 5%;
+    opacity: 0;
+  }
+  .fly-in-text.sa-hidden li {
+    opacity: 0;
+  }
+  .sa-header-button {
+    display: none;
+  }
+  .navbar-toggleable-md .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
 @media (max-width: 992px) {
+  p {
+    line-height: 40px;
+  }
   .navbar {
     display: none;
   }
@@ -1478,6 +1708,109 @@ footer.page-footer .view .mask p {
   }
   .cssmenuShow {
     right: 0;
+  }
+  hr.opacity-hidden-lg-up {
+    width: 100%;
+    opacity: 1;
+  }
+  .fly-in-text.sa-hidden li {
+    opacity: 1;
+  }
+  .fly-in-text.sa-hidden li:nth-child(1),
+  .fly-in-text.sa-hidden li:nth-child(2),
+  .fly-in-text.sa-hidden li:nth-child(3),
+  .fly-in-text.sa-hidden li:nth-child(4),
+  .fly-in-text.sa-hidden li:nth-child(6),
+  .fly-in-text.sa-hidden li:nth-child(7),
+  .fly-in-text.sa-hidden li:nth-child(8),
+  .fly-in-text.sa-hidden li:nth-child(9) {
+    transform: translateX(0) translateY(0);
+  }
+  .grey-text {
+    text-align: center;
+  }
+  .feature-title {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .sa-icon-bg {
+    text-align: center;
+    margin-bottom: 1rem
+  }
+  .leave-work .fa {
+    font-size: 50px;
+  }
+  .center-on-small-only {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+}
+
+@media (min-width: 768px) {
+  .sa-company-work {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reply-form img,
+  .comments-list img {
+    max-width: 70px;
+  }
+  .sa-about-us-popup {
+    margin-top: 6rem;
+  }
+  .reply-form img,
+  .comments-list img {
+    max-width: 70px;
+  }
+  .sa-about-us-popup {
+    margin-top: 6rem;
+  }
+  .video-banner-text .white-text {
+    margin-bottom: 10px;
+  }
+  .sa-banner-animation .subtext-header {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .sa-banner-animation .subtext-header.mb-4 {
+    margin-bottom: 10px;
+  }
+  .intro-img {
+    top: -5%;
+  }
+  hr.hr-light {
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+  .fly-in-text.sa-hidden li:nth-child(1),
+  .fly-in-text.sa-hidden li:nth-child(2),
+  .fly-in-text.sa-hidden li:nth-child(3),
+  .fly-in-text.sa-hidden li:nth-child(4),
+  .fly-in-text.sa-hidden li:nth-child(6),
+  .fly-in-text.sa-hidden li:nth-child(7),
+  .fly-in-text.sa-hidden li:nth-child(8),
+  .fly-in-text.sa-hidden li:nth-child(9) {
+    transform: translateX(0) translateY(25px);
+  }
+  .fly-in-text {
+    width: 200px;
+    height: 50px;
+  }
+  .fly-in-text li {
+    font-size: 25px;
+  }
+  .sa-company-work {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 660px) {
+  .intro-img img {
+    -webkit-transform: translateX(-50%) translateY(-210px);
+    -ms-transform: translateX(-50%) translateY(-210px);
+    transform: translateX(-50%) translateY(-210px);
   }
 }
 
@@ -1524,16 +1857,6 @@ footer.page-footer .view .mask p {
   .sa-footer-detail {
     text-align: center;
   }
-}
-
-@media (max-width: 768px) {
-  .reply-form img,
-  .comments-list img {
-    max-width: 70px;
-  }
-}
-
-@media (max-width: 575px) {
   main {
     padding-top: 20px;
   }
@@ -1555,15 +1878,18 @@ footer.page-footer .view .mask p {
   }
 }
 
-@media (min-width: 992px) {
-  .sa-header-button {
-    display: none;
+@media (max-width: 400px) {
+  .fly-in-text {
+    width: 180px;
+    height: 50px;
   }
-  .navbar-toggleable-md .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+  .fly-in-text li {
+    font-size: 20px;
+  }
+  .sa-banner-animation .subtext-header {
+    font-size: 12px;
+  }
+  .sa-about-banner-button {
+    font-size: .7rem;
   }
 }

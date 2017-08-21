@@ -75,3 +75,32 @@ $('.sa-close-btn').click(function () {
 $('footer').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
+
+
+if ($(window).width() >= 1000) {
+  $(function () {
+    setTimeout(function () {
+      $('.fly-in-text').removeClass('sa-hidden');
+    }, 200);
+    setTimeout(function () {
+      $('.hr-light').removeClass('opacity-hidden-lg-up');
+    }, 800);
+  });
+}
+
+if ($(window).width() >= 992) {
+  window.sr = ScrollReveal();
+  // all * pages
+  var subtextHeader = {
+    delay: 1200,
+    duration: 1500,
+    origin: 'bottom',
+    distance: '40px',
+  }
+  sr.reveal('.subtext-header', subtextHeader);
+  var aboutBannerButton = {
+    delay: 1600,
+    duration: 1500,
+  }
+  sr.reveal('.sa-about-banner-button', aboutBannerButton);
+}
