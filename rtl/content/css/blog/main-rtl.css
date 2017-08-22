@@ -1622,9 +1622,11 @@ hr.hr-light {
   border-radius: 5px;
   transition: .5s;
 }
+
 .pro-memeber-base {
   transition: .5s;
 }
+
 .pro-member .avatar {
   box-shadow: none;
   position: absolute;
@@ -1636,10 +1638,12 @@ hr.hr-light {
   z-index: 50;
   transition: .5s;
 }
+
 .pro-member .avatar img {
   box-shadow: none;
   opacity: 1;
 }
+
 .pro-member .detail {
   vertical-align: bottom;
   margin-top: 110px;
@@ -1653,79 +1657,62 @@ hr.hr-light {
   margin: auto;
   z-index: 20;
 }
+
 .pro-member:hover {
   box-shadow: 0px -1px 12px #888888;
 }
+
 .pro-member .icons-sm:nth-child(1) {
   transform: translateY(0);
   transition-duration: .5s;
 }
+
 .pro-member .icons-sm:nth-child(2) {
   transform: translateX(0) translateY(0);
   transition-duration: .5s;
 }
+
 .pro-member .icons-sm:nth-child(3) {
   transform: translateX(0) translateY(0);
   transition-duration: .5s;
 }
-/*.pro-member .icons-sm:nth-child(1) {
-  transform: translateY(70px);
-}
-.pro-member .icons-sm:nth-child(2) {
-  transform: translateX(65px) translateY(45px);
-}
-.pro-member .icons-sm:nth-child(3) {
-  transform: translateX(-65px) translateY(45px);
-}*/
+
 .pro-memeber-base:hover {
   margin-top: 10px;
   cursor: pointer
 }
+
 .pro-member .avatar:hover,
 .pro-memeber-base:hover .pro-member .avatar {
   top: -100px;
   cursor: pointer
 }
+
 .pro-memeber-base:hover .pro-member .icons-sm:nth-child(1) {
   transform: translateY(70px);
 }
+
 .pro-memeber-base:hover .pro-member .icons-sm:nth-child(2) {
   transform: translateX(65px) translateY(45px);
 }
+
 .pro-memeber-base:hover .pro-member .icons-sm:nth-child(3) {
   transform: translateX(-65px) translateY(45px);
 }
-/*  
-.pro-members {
-  margin-top: 180px;
-}
 
-.pro-member {
-  position: relative;
-  height: auto;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px #888888;
-  border-radius: 5px;
-}
-.pro-member .avatar {
-  box-shadow: none;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: -100px;
-  margin: auto;
+.contact-us-address {
   display: block;
-}
-.pro-member .avatar img {
-  box-shadow: none;
-}
-.pro-member .detail {
-  vertical-align: bottom;
-  margin-top: 80px;
+  margin: auto;
 }
 
-*/
+.contact-us-address .fa {
+  margin-right: 5px;
+}
+
+.contact-us {
+  margin-bottom: 35px;
+}
+
 
 /********************************
 
@@ -1899,6 +1886,17 @@ footer.page-footer .view .mask p {
   .center-on-small-only {
     margin-top: 2rem;
     margin-bottom: 2rem
+  }
+  .pro-member .avatar {
+    box-shadow: none;
+    position: static;
+  }
+  .pro-member .detail {
+    margin-top: 20px;
+  }
+  .pro-member .icons-sm {
+    position: static;
+    z-index: 50px;
   }
 }
 
@@ -2258,6 +2256,37 @@ footer.page-footer .view .mask p {
   .sa-company-work {
     padding: 25px;
   }
+  #prev_skills,
+  #next_skills {
+    position: absolute;
+    z-index: 100;
+    bottom: 200px;
+    font-size: 30px;
+  }
+  #next_skills {
+    right: 0
+  }
+  #prev_pros,
+  #next_pros {
+    position: absolute;
+    z-index: 100;
+    bottom: 300px;
+    font-size: 30px;
+  }
+  #next_pros {
+    right: 0
+  }
+  #prev_pros {
+    left: 0
+  }
+  .sa-display-none-pros {
+    display: none;
+  }
+  .pro-member {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
 }
 
 @media (max-width: 660px) {
@@ -2356,16 +2385,6 @@ footer.page-footer .view .mask p {
   .card-body p {
     font-size: 14px;
     line-height: 33px;
-  }
-  #prev_skills,
-  #next_skills {
-    position: absolute;
-    z-index: 100;
-    bottom: 200px;
-    font-size: 30px;
-  }
-  #next_skills {
-    right: 0
   }
   .cycle-slide {
     z-index: 50;

@@ -1,19 +1,21 @@
-/* 
+/*=======================
 
-This for make navigation sticky 
+        Global
+ 
+=======================*/
+$(window).click(function (e) {
+  e.preventDefault();
+});
 
-*/
+
+/* This for make navigation sticky */
 $(".navbar").sticky({
   topSpacing: 0
 });
 
 
 
-/* 
-
-These are for sidenav dropdown animation
-
-*/
+/* These are for sidenav dropdown animation */
 (function ($) {
   $(document).ready(function () {
     $('.cssmenu > ul > li > a').click(function () {
