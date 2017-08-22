@@ -103,4 +103,5 @@ if ($(window).width() >= 992) {
     duration: 1500,
   }
   sr.reveal('.sa-about-banner-button', aboutBannerButton);
+
 }
