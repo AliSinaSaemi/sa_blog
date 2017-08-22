@@ -1770,6 +1770,12 @@ footer.page-footer .view .mask p {
   }
 }
 
+@media (min-width: 1200px) {
+  .sa-display-none-pros {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   hr.opacity-hidden-lg-up {
     width: 5%;
