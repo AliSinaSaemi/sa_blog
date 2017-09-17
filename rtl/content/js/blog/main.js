@@ -9,10 +9,11 @@ $(window).click(function (e) {
 
 
 /* This for make navigation sticky */
-$(".navbar").sticky({
-  topSpacing: 0
+$(document).ready(function () {
+  $(".navbar").sticky({
+    topSpacing: 0
+  });
 });
-
 
 
 /* These are for sidenav dropdown animation */
@@ -193,7 +194,7 @@ if ($(window).width() >= 992) {
   var footer_detail_middle = {
     delay: 600,
     duration: 700,
-        origin: 'bottom',
+    origin: 'bottom',
     distance: '20px',
   }
   sr.reveal('.sa-footer-detail-middle', footer_detail_middle);
@@ -205,14 +206,14 @@ if ($(window).width() >= 992) {
     distance: '30px',
   }
   sr.reveal('.sa_footer_detail_right', sa_footer_detail_right);
-    var sa_footer_detail_left = {
+  var sa_footer_detail_left = {
     delay: 800,
     duration: 700,
     origin: 'left',
     distance: '30px',
   }
   sr.reveal('.sa_footer_detail_left', sa_footer_detail_left);
-  
+
   var footer_copyright = {
     delay: 800,
     duration: 700,
