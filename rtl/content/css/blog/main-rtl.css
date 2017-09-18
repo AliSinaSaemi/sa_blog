@@ -300,7 +300,6 @@ h6 {
 
 .dropdown-list-links-1 ul li a:hover:before {
   color: #0ba0ae;
-  opacity: 1;
 }
 
 .dropdown-list-links-1 ul li span {
@@ -312,7 +311,7 @@ h6 {
 .dropdown-list-links-1 ul li a {
   font-size: 15px;
   transition: .5s;
-  color: paleturquoise
+  color: #fff
 }
 
 .dropdown-list-links-1 ul li a:hover {
@@ -742,6 +741,49 @@ main {
   margin-left: 0;
   transition: .5s;
 }
+
+.landing-banner {
+  background-image: url(../../img/bg/wood.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #000;
+}
+
+.l-b-content {
+  padding: 150px 0;
+  width: 100%;
+}
+
+.l-b-content hr {
+  border: 2px solid #fff;
+  ;
+  width: 200px;
+}
+
+.l-b-type-animate .auto-write {
+  color: #fff;
+  text-align: center;
+}
+
+.l-b-links ul {
+  text-align: center
+}
+.l-b-links ul li {
+  height: 45px;
+}
+.l-b-text {
+  width: 500px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+.l-b-text p {
+  line-height: 35px;
+}
+
 
 .mainPartner {
   margin-right: 250px;
@@ -1628,6 +1670,10 @@ img {
   background: #00bfa5;
 }
 
+.btn-light-gold-1 {
+  background: #ffbf00;
+}
+
 .view {
   overflow: hidden !IMPORTANT;
   position: relative;
@@ -1905,6 +1951,13 @@ hr.hr-light {
 
 .contact-us {
   margin-bottom: 35px;
+}
+
+.loading {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 25px 25px;
+  animation: 2s linear 0s normal none infinite progress-bar-stripes;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
 }
 
 
@@ -2299,6 +2352,9 @@ footer i.right {
   }
   .navbar-toggleable-md .navbar-nav .nav-item:first-child .nav-link {
     margin-right: 15px;
+  }
+  .video-banner-text .white-text {
+    margin-bottom: 200px;
   }
 }
 

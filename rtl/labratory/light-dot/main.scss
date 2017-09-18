@@ -1,0 +1,61 @@
+@import "bourbon";
+
+$n:6;
+$w:20px;//dot size
+$e:4;//dot margin factor
+$hsl:160;//start color
+$bg:#333;
+
+html{
+	background:$bg;
+  height: 100%;
+  backface-visibility: hidden;
+}	
+
+#c{
+	position: absolute;
+	top:50%;
+	left:50%;	
+	margin-left: -(($n - 1)*($w + $w*$e))/2 - ($w/2);
+}
+
+@mixin shadow($b,$s,$sm,$c){
+	box-shadow:
+		0 0 8px 6px $c,
+		0 0 $b $s $bg,
+		0 0 $b ($s + $sm) $c;
+}
+
+.s{
+	width: $w;
+	height: $w;
+	border-radius: 50%;
+	cursor:pointer;
+	float: left;
+  @include transition(all .2s);
+	&:nth-child(n+2){
+		margin-left: $w*$e;
+	}
+}	
+	
+@for $i from 0 to $n {
+	$c:hsl($hsl+(10*$i),100%,55%);
+  $c2:hsl((6*$i),100%,55%);
+	
+	.s:nth-child(#{$i+1}){			
+		background: lighten($c,5%);	
+		@include animation(r+$i 2s ($i/4)+s ease-out  infinite);		 &:hover{
+      background: lighten($c2,5%);      
+      @include animation(r2+$i .5s .4s  ease-out  infinite);
+    }
+	}
+	@include keyframes(r+$i) {
+    0%{@include shadow(0px,0px,0px,rgba($c,0));}
+		10%{@include shadow(12px,10px,4px,$c);}
+		100%{@include shadow(0px,40px,0px,rgba($c,0));}
+	}
+  @include keyframes(r2+$i) {
+		from{@include shadow(12px,10px,4px,$c2);}
+		to{@include shadow(4px,40px,1px,rgba($c2,0));}
+	}
+}
