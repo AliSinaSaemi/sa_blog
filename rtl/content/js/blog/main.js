@@ -7,8 +7,11 @@ $(window).click(function (e) {
   e.preventDefault();
 });
 
+/*=======================
 
-/* This for make navigation sticky */
+        sticky nav
+ 
+=======================*/
 $(document).ready(function () {
   $(".navbar").sticky({
     topSpacing: 0
@@ -16,7 +19,12 @@ $(document).ready(function () {
 });
 
 
-/* These are for sidenav dropdown animation */
+/*=======================
+
+        hide/ show
+        nav
+ 
+=======================*/
 (function ($) {
   $(document).ready(function () {
     $('.cssmenu > ul > li > a').click(function () {
@@ -39,8 +47,75 @@ $(document).ready(function () {
     });
   });
 })(jQuery);
+/*=======================
 
-/* These are for landing banner text animation */
+        collapse
+ 
+=======================*/
+(function(){
+	var d = document,
+	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	setAria,
+	setAccordionAria,
+	switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
+    e.preventDefault();
+    e.target.click();
+  }
+
+		setAriaAttr = function(el, ariaType, newProperty){
+		el.setAttribute(ariaType, newProperty);
+	};
+	setAccordionAria = function(el1, el2, expanded){
+		switch(expanded) {
+      case "true":
+      	setAriaAttr(el1, 'aria-expanded', 'true');
+      	setAriaAttr(el2, 'aria-hidden', 'false');
+      	break;
+      case "false":
+      	setAriaAttr(el1, 'aria-expanded', 'false');
+      	setAriaAttr(el2, 'aria-hidden', 'true');
+      	break;
+      default:
+				break;
+		}
+	};
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+	e.preventDefault();
+	var thisAnswer = e.target.parentNode.nextElementSibling;
+	var thisQuestion = e.target;
+	if(thisAnswer.classList.contains('is-collapsed')) {
+		setAccordionAria(thisQuestion, thisAnswer, 'true');
+	} else {
+		setAccordionAria(thisQuestion, thisAnswer, 'false');
+	}
+  	thisQuestion.classList.toggle('is-collapsed');
+  	thisQuestion.classList.toggle('is-expanded');
+		thisAnswer.classList.toggle('is-collapsed');
+		thisAnswer.classList.toggle('is-expanded');
+ 	
+  	thisAnswer.classList.toggle('animateIn');
+	};
+	for (var i=0,len=accordionToggles.length; i<len; i++) {
+		if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
+/*=======================
+
+        banner text
+ 
+=======================*/
 $(document).ready(function () {
   var TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -102,7 +177,144 @@ $(document).ready(function () {
   l
 });
 
-// Show cssmenu in big devises
+/*=======================
+
+        sub
+ 
+=======================*/
+jQuery(document).ready(function ($) {
+
+  var MqM = 768,
+    MqL = 1024;
+
+  var faqsSections = $('.faq-group'),
+    faqTrigger = $('.trigger'),
+    faqsContainer = $('.faq-items'),
+    faqsCategoriesContainer = $('.categories'),
+    faqsCategories = faqsCategoriesContainer.find('a'),
+    closeFaqsContainer = $('.cd-close-panel');
+
+  //select a faq section 
+  faqsCategories.on('click', function (event) {
+    event.preventDefault();
+    var selectedHref = $(this).attr('href'),
+      target = $(selectedHref);
+    if ($(window).width() < MqM) {
+      faqsContainer.scrollTop(0).addClass('slide-in').children('ul').removeClass('selected').end().children(selectedHref).addClass('selected');
+      closeFaqsContainer.addClass('move-left');
+      $('body').addClass('cd-overlay');
+    } else {
+      $('body,html').animate({
+        'scrollTop': target.offset().top - 19
+      }, 200);
+    }
+  });
+
+  //close faq lateral panel - mobile only
+  $('body').bind('click touchstart', function (event) {
+    if ($(event.target).is('body.cd-overlay') || $(event.target).is('.cd-close-panel')) {
+      closePanel(event);
+    }
+  });
+  faqsContainer.on('swiperight', function (event) {
+    closePanel(event);
+  });
+
+
+  faqTrigger.on('click', function (event) {
+    event.preventDefault();
+    $(this).next('.faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
+  });
+
+  $(window).on('scroll', function () {
+    if ($(window).width() > MqL) {
+      (!window.requestAnimationFrame) ? updateCategory(): window.requestAnimationFrame(updateCategory);
+    }
+  });
+
+  $(window).on('resize', function () {
+    if ($(window).width() <= MqL) {
+      faqsCategoriesContainer.removeClass('is-fixed').css({
+        '-moz-transform': 'translateY(0)',
+        '-webkit-transform': 'translateY(0)',
+        '-ms-transform': 'translateY(0)',
+        '-o-transform': 'translateY(0)',
+        'transform': 'translateY(0)',
+      });
+    }
+    if (faqsCategoriesContainer.hasClass('is-fixed')) {
+      faqsCategoriesContainer.css({
+        'left': faqsContainer.offset().left,
+      });
+    }
+  });
+
+  function closePanel(e) {
+    e.preventDefault();
+    faqsContainer.removeClass('slide-in').find('li').show();
+    closeFaqsContainer.removeClass('move-left');
+    $('body').removeClass('cd-overlay');
+  }
+
+  function updateCategory() {
+    updateCategoryPosition();
+    updateSelectedCategory();
+  }
+
+  function updateCategoryPosition() {
+    var top = $('.faq').offset().top,
+      height = jQuery('.faq').height() - jQuery('.categories').height(),
+      margin = 65;
+    if (top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop()) {
+      var leftValue = faqsCategoriesContainer.offset().left,
+        widthValue = faqsCategoriesContainer.width();
+      faqsCategoriesContainer.addClass('is-fixed').css({
+        'left': leftValue,
+        'top': margin,
+        '-moz-transform': 'translateZ(0)',
+        '-webkit-transform': 'translateZ(0)',
+        '-ms-transform': 'translateZ(0)',
+        '-o-transform': 'translateZ(0)',
+        'transform': 'translateZ(0)',
+      });
+    } else if (top - margin + height <= $(window).scrollTop()) {
+      var delta = top - margin + height - $(window).scrollTop();
+      faqsCategoriesContainer.css({
+        '-moz-transform': 'translateZ(0) translateY(' + delta + 'px)',
+        '-webkit-transform': 'translateZ(0) translateY(' + delta + 'px)',
+        '-ms-transform': 'translateZ(0) translateY(' + delta + 'px)',
+        '-o-transform': 'translateZ(0) translateY(' + delta + 'px)',
+        'transform': 'translateZ(0) translateY(' + delta + 'px)',
+      });
+    } else {
+      faqsCategoriesContainer.removeClass('is-fixed').css({
+        'left': 0,
+        'top': 0,
+      });
+    }
+  }
+
+  function updateSelectedCategory() {
+    faqsSections.each(function () {
+      var actual = $(this),
+        margin = parseInt($('.faq-title').eq(1).css('marginTop').replace('px', '')),
+        activeCategory = $('.categories a[href="#' + actual.attr('id') + '"]'),
+        topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
+
+      if ((topSection - 20 <= $(window).scrollTop()) && (Math.round(actual.offset().top) + actual.height() + margin - 20 > $(window).scrollTop())) {
+        activeCategory.addClass('selected');
+      } else {
+        activeCategory.removeClass('selected');
+      }
+    });
+  }
+});
+
+/*=======================
+
+        scroll.js
+ 
+=======================*/
 $('.menu-bars').click(function (e) {
   e.preventDefault();
   $('.cssmenu').addClass('cssmenuShow');
