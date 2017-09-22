@@ -264,7 +264,7 @@ jQuery(document).ready(function ($) {
   function updateCategoryPosition() {
     var top = $('.faq').offset().top,
       height = jQuery('.faq').height() - jQuery('.categories').height(),
-      margin = 65;
+      margin = 70;
     if (top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop()) {
       var leftValue = faqsCategoriesContainer.offset().left,
         widthValue = faqsCategoriesContainer.width();

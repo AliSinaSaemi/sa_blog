@@ -175,7 +175,7 @@ h6 {
   padding: 15px;
   padding-right: 40px;
   padding-left: 25px;
-  background-color: #2f3335;
+  background-color: #093e3b;
   color: #fff;
 }
 
@@ -254,7 +254,7 @@ h6 {
 }
 
 .navbar.bg-faded {
-  background-color: #7d8488;
+  background-color: #1ba39c;
 }
 
 .navbar .navbar-logo {
@@ -464,7 +464,7 @@ h6 {
 .sa-close-btn {
   width: 35px;
   height: 35px;
-  background-color: #969ba1;
+  background-color: transparent;
 }
 
 .sa-header-button {
@@ -473,7 +473,7 @@ h6 {
   position: fixed;
   top: 20px;
   left: 20px;
-  background-color: #000;
+  background-color: #ffbf00;
   text-align: center;
   border-radius: 5px;
   z-index: 2000;
@@ -535,7 +535,7 @@ h6 {
 
 .cssmenu {
   width: 250px;
-  background: url(../../img/sidenav/sidenav2.jpg);
+  background: url(../../img/sidenav/sidenav1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: auto;
@@ -545,6 +545,7 @@ h6 {
   top: 0;
   margin: 0;
   background-color: black;
+  background-position: center bottom;
   line-height: 1;
   right: -275px;
   overflow: scroll;
@@ -663,11 +664,11 @@ form.search-form input.form-control::placeholder {
 }
 
 .cssmenu > ul > li > a:hover {
-  background: rgba(65, 203, 226, 0.62);
+  background: #1ba39c;
 }
 
 .cssmenu > ul > li > a:focus {
-  background: rgba(65, 203, 226, 0.62);
+  background: #1ba39c;
 }
 
 .nav-item-ic {
@@ -763,7 +764,7 @@ form.search-form input.form-control::placeholder {
 
 .cssmenu ul ul a:hover {
   color: #fff;
-  background-color: rgba(65, 203, 226, 0.62);
+  background-color: #1ba39c;
 }
 
 
@@ -781,7 +782,7 @@ main {
 }
 
 .landing-banner {
-  background-image: url(../../img/bg/rocket.jpg);
+  background-image: url(../../img/bg/rocket-2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1070,31 +1071,9 @@ hr.landing-spacer:after {
   left: 215px;
 }
 
+.l-p-bg-2,
 .l-p-bg-1 {
-  background-color: #016e92;
-}
-
-.l-p-triagnle {
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-right-width: 0px;
-  border-left-width: 81px;
-  border-bottom: 450px solid #016e92;
-  position: absolute;
-  left: -80px;
-  bottom: 0;
-  z-index: 2;
-}
-
-.l-p-bg-2 {
-  background-image: url(../../img/bg/bg-5.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  background-color: rgb(2, 31, 40);
-  z-index: 1;
+  background-color: #1ba39c;
 }
 
 .l-p-content {
@@ -1113,7 +1092,7 @@ hr.landing-spacer:after {
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
-  color: #144b78;
+  color: #ffbf00;
   margin-left: 8px;
   margin-top: 3px;
 }
@@ -1139,31 +1118,8 @@ hr.landing-spacer:after {
 }
 
 .landing-power img {
-  padding: 70px;
   position: absolute;
-  animation-name: icePelanet;
-  animation-duration: 1.3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes icePelanet {
-  0% {
-    top: -3px;
-  }
-  25% {
-    top: 3px;
-  }
-  50% {
-    top: 6px;
-  }
-  75% {
-    top: 10px;
-  }
-  100% {
-    top: 15px;
-  }
+  top: -119px;
 }
 
 .l-p-link {
@@ -1240,7 +1196,7 @@ hr.landing-spacer:after {
   height: 50px;
   line-height: 50px;
   padding: 0 28px 0 16px;
-  background-color: #4e5359;
+  background-color: #3e4550;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -1326,7 +1282,7 @@ hr.landing-spacer:after {
     transition: opacity 0.2s;
   }
   .categories .selected {
-    background: #42464b !important;
+    background: #249da0 !important;
   }
   .categories .selected::before {
     opacity: 1;
@@ -1487,6 +1443,10 @@ hr.landing-spacer:after {
   margin: 1em 0;
 }
 
+.content-visible .trigger {
+  color: #249da0;
+}
+
 .no-touch .faq-group .faq-title:hover {
   box-shadow: none;
 }
@@ -1496,7 +1456,8 @@ hr.landing-spacer:after {
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #bbbbc7;
+  color: #ffbf00;
+  margin-right: 55px;
 }
 
 .no-js .faq-group {
@@ -1533,6 +1494,17 @@ hr.landing-spacer:after {
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
+  color: #3e4550;
+  transition: .5s;
+}
+
+.trigger:hover {
+  opacity: .6;
+  color: #3e4550;
+}
+.trigger:focus {
+  opacity: .6;
+  color: #249da0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1606,6 +1578,7 @@ hr.landing-spacer:after {
   }
   .faq-content p {
     line-height: 1.6;
+    text-align: justify;
   }
   .no-js .faq-content {
     display: block;
@@ -1623,7 +1596,7 @@ hr.landing-spacer:after {
   display: block;
   height: 1em;
   width: 100%;
-  background-color: #2ba659;
+  background-color: #2b2f35;
 }
 
 .accordion dd,
@@ -1650,7 +1623,7 @@ hr.landing-spacer:after {
 
 .accordionTitle,
 .accordion__Heading {
-  background-color: #38cc70;
+  background-color: #3e4550;
   text-align: center;
   font-weight: 700;
   padding: 2em;
@@ -1672,12 +1645,16 @@ hr.landing-spacer:after {
 
 .accordionTitle:hover,
 .accordion__Heading:hover {
-  background-color: #2ba659;
+  background-color: #1ba39c;
+}
+
+.accordionTitle:focus {
+  color: #fff;
 }
 
 .accordionTitleActive,
 .accordionTitle.is-expanded {
-  background-color: #2ba659;
+  background-color: #1ba39c;
 }
 
 .accordionTitleActive:before,
@@ -3144,7 +3121,7 @@ footer i.right {
 }
 
 .theme-color {
-  color: #01999a;
+  color: #1ba39c;
 }
 
 .right {
@@ -3239,6 +3216,13 @@ footer i.right {
 @media (max-width: 1090px) {
   .dropdown-3-col {
     right: -65px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .landing-power img {
+    top: -97px;
+    width: 350px;
   }
 }
 
