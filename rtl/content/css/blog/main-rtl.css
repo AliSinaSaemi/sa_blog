@@ -161,6 +161,7 @@ h6 {
   transition: .3s;
   font-family: 'IRANSans';
   position: relative;
+  border-radius: 0;
 }
 
 .navbar.navbar-light .nav-item > a {
@@ -758,8 +759,7 @@ form.search-form input.form-control::placeholder {
   right: 19px;
   color: #fff;
   font-size: 21px;
-  bottom: 4px;
-  transform: rotate(180deg);
+  bottom: 7px;
 }
 
 .cssmenu ul ul a:hover {
@@ -845,6 +845,14 @@ hr.l-hr-1 {
   border: 2px solid #000;
   width: 300px;
   margin-top: 0;
+}
+
+.section-p-t-1 {
+  padding-top: 50px;
+}
+
+.section-p-t-2 {
+  padding-top: 100px;
 }
 
 .section-p-b-1 {
@@ -1502,6 +1510,7 @@ hr.landing-spacer:after {
   opacity: .6;
   color: #3e4550;
 }
+
 .trigger:focus {
   opacity: .6;
   color: #249da0;
@@ -1715,8 +1724,81 @@ hr.landing-spacer:after {
   }
 }
 
+.users-idea .comment.commentOptionOn {
+  background-color: #fa3c18;
+  color: #fff;
+}
 
-/*# sourceMappingURL=main.css.map */
+.users-idea .comment,
+.users-idea .like {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 6px 11px;
+  border-radius: 50px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.users-idea .comment:focus,
+.users-idea .like:focus,
+.users-idea .comment:hover,
+.users-idea .like:hover {
+  background-color: #fa3c18;
+  color: #fff;
+}
+
+.comment-inbox {
+  text-align: right;
+  font-family: 'IRANSans';
+  padding: 10px;
+  font-size: 13px;
+  direction: rtl;
+  transition: .5s;
+}
+
+.comment-inbox:focus {
+  border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.submit-comment {
+  background-color: #1ba39c;
+  color: #fff;
+  border: 1.5px solid #1ba39c;
+  font-size: 13px;
+  padding: 9px;
+  font-family: 'IRANSans';
+  cursor: pointer;
+  transition: .4s;
+}
+
+.submit-comment:hover {
+  background-color: #fff;
+  color: #1ba39c;
+  border: 1.5px solid #1ba39c;
+}
+
+/*
+.commentBoxShow {
+  display: block;
+  height: 60px;
+}
+
+.commentButtonShow {
+  display: block;
+  height: 40px;
+}
+*/
+
+.comment-spacer {
+  width: 300px;
+  background-color: #1ba39c;
+  height: 2px;
+  display: block;
+  margin: 15px auto;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
 
 .mainPartner {
   margin-right: 250px;
@@ -2088,8 +2170,9 @@ hr.landing-spacer:after {
   margin-bottom: 3rem;
 }
 
-
-/*  Here is Test for this social media  */
+.section h5 .fa {
+  margin-left: 8px;
+}
 
 .z-depth-1-half,
 .media .media-left img,
@@ -3943,6 +4026,13 @@ footer i.right {
   }
   .l-title h2 {
     font-size: 18px;
+  }
+  .container-fluid-xs {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px
   }
 }
 

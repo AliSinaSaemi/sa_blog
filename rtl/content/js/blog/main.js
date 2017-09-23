@@ -310,6 +310,22 @@ jQuery(document).ready(function ($) {
   }
 });
 
+
+/*=======================
+
+    show comment box
+ 
+=======================*/
+
+/*$(document).ready(function () {
+  $(".comment").click(function (e) {
+    e.preventDefault();
+    $(".comment-inbox").toggleClass("commentBoxShow");
+    $(".submit-comment").toggleClass("commentButtonShow");
+    $(".comment").toggleClass("commentOptionOn");
+  });
+});*/
+
 /*=======================
 
         scroll.js
