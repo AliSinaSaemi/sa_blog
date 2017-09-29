@@ -902,6 +902,7 @@ hr.l-hr-1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 90px;
 }
 
 .landing-work-sample .l-title {
@@ -910,6 +911,49 @@ hr.l-hr-1 {
 
 .landing-work-sample .l-title hr {
   border: 2px solid #fff;
+}
+
+.landing-work-sample:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: url(http://fidex.com.ua/demo/milness/demos/img/s1_triangle.svg);
+  background-size: cover;
+  background-position: bottom;
+  z-index: 3;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  background-color: #1ba39c;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.carousel-control-next .text-muted,
+.carousel-control-prev .text-muted {
+  color: #ffffff!important;
+  font-size: 30px;
+  transition: .3s;
+}
+
+.carousel-control-prev .text-muted {
+  margin-left: -4px;
+}
+
+.carousel-control-next .text-muted {
+  margin-right: -4px;
+}
+
+.landing-news {
+  background-color: #e6ecf1;
 }
 
 .relative {
@@ -1058,6 +1102,147 @@ hr.l-hr-1 {
 .hover-img-1 .thumbnail:hover img {
   opacity: .7;
   transform: scale(1.2, 1.2);
+}
+
+.hover-img-2 {
+  margin-bottom: 25px;
+}
+
+.hover-img-2 .thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #040c0e;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.hover-img-2 .thumbnail .caption {
+  padding: 50px;
+}
+
+.hover-img-2 .caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'yekan';
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  text-align: right;
+  color: #fff !important;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-img-2 .caption h4 {
+  font-size: 25px;
+  position: relative;
+  opacity: 0;
+  transition: .5s;
+  text-align: center;
+}
+
+.hover-img-2 .caption h4:after {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  transition: transform 0.35s;
+  transform: translate3d(120%, 0, 0);
+}
+
+.hover-img-2 .caption .fullfil,
+.hover-img-2 .caption .toggle {
+  position: absolute;
+  bottom: 15px;
+  color: #d3d3d3;
+}
+
+.hover-img-2 .caption .fullfil {
+  left: 20px;
+  transition: .5s;
+}
+
+.hover-img-2 .caption .toggle {
+  right: 20px;
+  margin: 0;
+  transition: .4s;
+}
+
+.hover-img-2 .thumbnail-content {
+  opacity: 0;
+  transition: .35s;
+  margin-top: 80px;
+}
+
+.hover-img-2 .caption .hidden {
+  font-size: 13px;
+}
+
+.hover-img-2 .thumbnail img {
+  opacity: .9;
+  transform: scale(1, 1);
+  transition: .35s;
+  position: relative;
+}
+
+.hover-img-2 .thumbnail:hover {
+  box-shadow: 0 1px 15px #040c0e;
+  border-radius: 5px;
+}
+
+.hover-img-2 .thumbnail:hover .fullfil {
+  color: #Fff;
+}
+
+.hover-img-2 .thumbnail:hover .toggle {
+  opacity: 0;
+}
+
+.hover-img-2 .thumbnail:hover .thumbnail-content {
+  opacity: 1;
+}
+
+.hover-img-2 .thumbnail:hover .caption h4:after {
+  transform: translate3d(0, 0, 0);
+}
+
+.hover-img-2 .thumbnail:hover .caption h4 {
+  opacity: 1;
+}
+
+.hover-img-2 .thumbnail:hover img {
+  opacity: .7;
+  transform: scale(1.2, 1.2);
+}
+
+.sample-icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: block;
+  background-color: rgba(27, 163, 156, 0.53);
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid rgba(27, 163, 156, 0.55);
+}
+
+.sample-icon i {
+  position: absolute;
+  right: 9px;
+  font-size: 30px;
+  top: 7px;
 }
 
 .link-box {
@@ -2222,6 +2407,10 @@ hr.l-hr-1 {
   overflow: hidden;
 }
 
+.author-box {
+  background-color: #Fff;
+}
+
 .mb-3-half {
   margin-bottom: 3.5rem;
 }
@@ -3306,6 +3495,10 @@ footer {
   z-index: 1000;
 }
 
+footer.page-footer {
+  margin-top: 0;
+}
+
 .first-footer {
   padding: 40px 0
 }
@@ -3725,6 +3918,12 @@ footer i.right {
   }
   .landing-feature .icon-container-no-bofore:before {
     display: none;
+  }
+  .carousel-control-prev:hover .text-muted {
+    margin-left: -8px;
+  }
+  .carousel-control-next:hover .text-muted {
+    margin-right: -8px;
   }
 }
 
