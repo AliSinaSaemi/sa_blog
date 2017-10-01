@@ -203,6 +203,41 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 /*=======================
 
+      comapies slider
+ 
+=======================*/
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    items: 4,
+    margin: 30,
+    nav: true,
+    smartSpeed: 900,
+    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 4,
+        nav: true,
+        loop: false,
+        margin: 20
+      }
+    }
+  });
+});
+
+
+/*=======================
+
         sidenav.js
  
 =======================*/
@@ -265,7 +300,6 @@ if ($(window).width() >= 1000) {
 if ($(window).width() >= 992) {
   window.sr = ScrollReveal();
   // banner - landing page
-
   var banner_animation = {
     delay: 300,
     duration: 1000,
@@ -331,21 +365,21 @@ if ($(window).width() >= 992) {
   var ice_planet_title = {
     delay: 400,
     duration: 800,
-    distance: '40px',
+    distance: '5px',
     origin: 'right',
   }
   sr.reveal('.ice_planet_title', ice_planet_title);
   var ice_planet_text = {
     delay: 500,
     duration: 800,
-    distance: '40px',
+    distance: '5px',
     origin: 'right',
   }
   sr.reveal('.ice_planet_text', ice_planet_text);
   var ice_planet_list = {
     delay: 600,
     duration: 800,
-    distance: '40px',
+    distance: '5px',
     origin: 'right',
   }
   sr.reveal('.ice_planet_list', ice_planet_list);
@@ -381,14 +415,14 @@ if ($(window).width() >= 992) {
   }
   sr.reveal('.features_icons', features_icons);
   // samples - landing page
-    var carousel_slider = {
+  var carousel_slider = {
     delay: 700,
     duration: 800,
     distance: '40px',
     origin: 'top',
   }
   sr.reveal('.carousel_slider', carousel_slider);
-    var carousel_slider_arrows = {
+  var carousel_slider_arrows = {
     delay: 800,
     duration: 800,
     distance: '40px',
@@ -396,7 +430,7 @@ if ($(window).width() >= 992) {
   }
   sr.reveal('.carousel_slider_arrows', carousel_slider_arrows);
   // news - landing page
-      var posts = {
+  var posts = {
     delay: 700,
     duration: 800,
     distance: '40px',
@@ -404,25 +438,33 @@ if ($(window).width() >= 992) {
   }
   sr.reveal('.posts', posts);
   // footer - landing page
-        var footer_1 = {
+  var footer_1 = {
     delay: 700,
     duration: 800,
-    distance: '40px',
+    distance: '5px',
     origin: 'right',
   }
   sr.reveal('.footer_1', footer_1);
-          var footer_2 = {
+  var footer_2 = {
     delay: 700,
     duration: 800,
     distance: '40px',
     origin: 'bottom',
   }
   sr.reveal('.footer_2', footer_2);
-            var footer_3 = {
+  var footer_3 = {
     delay: 700,
     duration: 800,
-    distance: '40px',
+    distance: '5px',
     origin: 'left',
   }
   sr.reveal('.footer_3', footer_3);
+  // benefits - landing page
+  var phone_nalf = {
+    delay: 900,
+    duration: 1000,
+    distance: '80px',
+    origin: 'bottom',
+  }
+  sr.reveal('.phone_nalf', phone_nalf);
 }
