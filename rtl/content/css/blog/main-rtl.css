@@ -4112,10 +4112,8 @@ footer .section-title-inline>span {
   display: block;
   line-height: 1.6rem;
   font-size: .78rem;
-  font-family: Primary_light;
   color: #e6e6e6;
   text-align: right;
-  font-family: 'yekan'
 }
 
 footer i.right {
@@ -4175,11 +4173,9 @@ footer i.right {
   display: inline-block;
   line-height: 1.6rem;
   font-size: 11px;
-  font-family: Primary_light;
   color: #e6e6e6;
   margin-left: 7px;
   margin-bottom: 7px;
-  font-family: 'yekan'
 }
 
 .footer-tags a>i {
