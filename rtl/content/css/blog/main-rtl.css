@@ -990,6 +990,7 @@ main {
   background-size: cover;
   background-position: center top;
   background-color: #000;
+  margin-top: -20px;
 }
 
 .l-b-content {
@@ -2054,12 +2055,6 @@ hr.l-hr-1 {
 .accordion {
   position: relative;
   background-color: #eee;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2em 0 2em 0;
 }
 
 .accordionTitle,
@@ -3759,6 +3754,10 @@ img {
   background: #ffbf00;
 }
 
+.btn-light-red-1 {
+  background: #ca1e53;
+}
+
 .view {
   overflow: hidden !IMPORTANT;
   position: relative;
@@ -4043,6 +4042,185 @@ hr.hr-light {
   background-size: 25px 25px;
   animation: 2s linear 0s normal none infinite progress-bar-stripes;
   -webkit-animation: progress-bar-stripes 2s linear infinite;
+}
+
+.package-banner {
+  background: url(../../img/bg/extras-hg.jpg);
+  background-size: cover;
+  height: 230px;
+  position: relative;
+  box-shadow: inset 0px 7px 80px rgba(0, 0, 0, 0.81);
+}
+
+.p-b-content {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.p-b-content h1 {
+  color: #ca1e53;
+  font: 300 23pt/1 "IRANSans", tahoma;
+  text-shadow: 0px 1px 3px #333;
+  text-align: right;
+  margin: 0;
+  padding: 0px;
+}
+
+.p-b-content .descr {
+  color: #000;
+  font: 200 16pt/1.8 "IRANSans", tahoma;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+}
+
+.location {
+  background-image: url(../../img/bg/package-bg.jpg);
+  background-size: cover;
+  padding: 20px 0;
+  position: relative;
+}
+
+.location ul {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.location ul li {
+  position: relative;
+  margin-right: 25px
+}
+
+.location ul li:first-child {
+  margin-right: 0
+}
+
+.location ul li a {
+  color: #000;
+}
+
+.location ul li:before {
+  font-family: FontAwesome;
+  content: "\f100";
+  position: absolute;
+  right: -17px;
+  bottom: 0px;
+  color: #ca1e53;
+}
+
+.location ul li:first-child:before {
+  display: none;
+}
+
+.location .btn {
+  position: absolute;
+  left: 10px;
+  top: -15px;
+}
+
+.plan {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 0px;
+  color: #000000;
+}
+
+.plan .plan-title {
+  margin: 0;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.plan .plan-title h2 {
+  background: #484848;
+  padding: 0.5em;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.titleinhome {
+  background: #252525 !important;
+}
+
+.packcatimg {
+  background: rgba(255, 255, 255, 1);
+  text-align: center !important;
+  padding: 0px !important;
+  border: 1px solid #eee;
+  border-radius: 0 0 7px 7px;
+}
+
+.packcatimg img {
+  margin: auto 0;
+  width: 100%;
+}
+
+.border-pack {
+  border-top: 1px solid #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.18) 0 1px 9px 0px;
+  margin: 20px;
+}
+
+.font-size-1-5 {
+  font-size: 1.5em;
+}
+
+.plan .plan-features {
+  text-align: center;
+  list-style: none;
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+.plan .plan-features li {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.plan-buy .btn {
+  margin-bottom: 15px;
+}
+
+.free-advise {
+  padding: 40px;
+  background-color: #454545;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.26);
+}
+
+.free-advise h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 0px 2px #333;
+  font-size: 20px;
+  color: #Fff;
+  margin-right: 25px;
+  height: 22px;
+}
+
+.free-advise h3:before {
+  font-family: FontAwesome;
+  content: "\f05a";
+  position: absolute;
+  right: -22px;
+  bottom: 0px;
+  color: #fff;
+}
+
+.free-advise .btn {
+  position: absolute;
+  left: 15px;
+  bottom: -15px;
 }
 
 
@@ -4617,6 +4795,9 @@ footer i.right {
   .hover-img-2 .thumbnail .sample-icon {
     display: none
   }
+  .support-unit {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -5079,6 +5260,22 @@ footer i.right {
     padding-right: 30px;
     margin-right: 20px;
   }
+  .plan {
+    margin-bottom: 20px;
+  }
+  .free-advise h3 {
+    margin-right: 25px;
+    display: block;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .free-advise .btn {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -5259,6 +5456,13 @@ footer i.right {
   }
   .l-p-content {
     padding: 20px;
+  }
+  .p-b-content .descr {
+    font: 200 14pt/1.8 "IRANSans", tahoma;
+    padding-top: 10px;
+  }
+  .p-b-content h1 {
+    font: 300 16pt/1 "IRANSans", tahoma;
   }
 }
 

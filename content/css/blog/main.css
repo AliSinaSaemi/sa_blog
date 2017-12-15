@@ -1395,13 +1395,11 @@ img {
   background: #00bfa5;
 }
 
-
 .view {
   overflow: hidden !IMPORTANT;
   position: relative;
   cursor: default;
 }
-
 
 .intro-video video {
   top: 550px;
@@ -1421,14 +1419,14 @@ img {
   transition: 1s opacity;
 }
 
-
-.view img, .view video {
+.view img,
+.view video {
   display: block;
   position: relative;
 }
 
-
-.view .full-bg-img, .view .mask {
+.view .full-bg-img,
+.view .mask {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1437,12 +1435,14 @@ img {
   left: 0;
 }
 
-
 video {
   object-fit: contain;
 }
 
-.full-height, .full-height body, .full-height header, .full-height header .view {
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
   height: 100%;
 }
 
@@ -1463,10 +1463,10 @@ video {
   height: auto;
 }
 
-.section.team-section h4, .section.team-section h5 {
+.section.team-section h4,
+.section.team-section h5 {
   margin-bottom: 1rem;
 }
-
 
 .section h4 {
   font-weight: 400;
@@ -1488,17 +1488,15 @@ video {
   color: #3b5998!important;
 }
 
-
 .avatar {
   margin-left: 33px;
 }
-
 
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0,0,0,.1);
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 
