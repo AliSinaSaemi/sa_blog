@@ -283,6 +283,8 @@ h6 {
   left: 25px;
   width: 80px;
   transition: .5s;
+  background-color: #093e3b;
+  border-radius: 50px;
 }
 
 .is-sticky .navbar .navbar-logo {
@@ -4519,6 +4521,17 @@ footer.page-footer {
   margin-left: 5px;
   color: rgb(21, 144, 177);
   ;
+}
+
+.footer_1 label,
+.footer_1 textarea,
+.footer_1 .md-form input {
+  color: #fff;
+}
+
+.footer_1 h1 {
+  font-size: 25px;
+  line-height: 20.5px;
 }
 
 .footer-scroll-view-works ul li a {
