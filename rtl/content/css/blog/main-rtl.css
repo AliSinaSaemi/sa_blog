@@ -2718,12 +2718,17 @@ hr.l-hr-1 {
   z-index: 2;
 }
 
-.landing-companies img {
-  width: 100% !important;
-}
-
 .landing-companies .owl-theme .owl-dots {
   display: none;
+}
+
+img.width-full.img-responsive.center-block.company_4 {
+  width: 100px;
+  margin: 0 auto;
+}
+
+img.img-responsive.center-block.company_2 {
+  margin-top: 50px;
 }
 
 .landing-companies .owl-theme .owl-nav [class*=owl-] {
@@ -2755,6 +2760,11 @@ hr.l-hr-1 {
 
 .landing-companies .owl-theme .owl-nav .owl-next {
   right: 5px;
+}
+
+.landing-companies .owl-theme .owl-nav .owl-next,
+.landing-companies .owl-theme .owl-nav .owl-prev {
+  top: 65px;
 }
 
 .landing-companies .owl-theme .owl-nav .owl-prev i {
@@ -4533,29 +4543,9 @@ hr.hr-light {
   filter: brightness(50%);
 }
 
-.companies-with {
-  padding: 40px 0;
-  background-color: #292b2f;
-}
-
-.companies-with img {
-  display: block;
-  margin: 0 auto;
-}
-
-img.img-responsive.center-block.company_1,
-img.img-responsive.center-block.company_2,
-img.img-responsive.center-block.company_3,
-img.img-responsive.center-block.company_4 {
-  width: 180px;
-}
-
-img.img-responsive.center-block.company_4 {
-  width: 110px;
-}
-
-img.img-responsive.center-block.company_2 {
-  margin-top: 50px
+img.red_rocket {
+  height: 83%;
+  background-color: #1d8093;
 }
 
 .location_all {
@@ -4579,6 +4569,208 @@ img.img-responsive.center-block.company_2 {
 
 .location_all li.arrow {
   margin: 0 10px;
+}
+
+.doc-scroll {
+  position: relative;
+}
+
+.doc-scroll .search-box {
+  width: 500px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  top: 35px;
+  border-bottom: none;
+}
+
+.doc-scroll .search-box input {
+  background-color: #1ba39c;
+}
+
+.doc-scroll .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+
+/* WebKit, Blink, Edge */
+
+.doc-scroll .form-control:-moz-placeholder {
+  color: #fff;
+}
+
+
+/* Mozilla Firefox 4 to 18 */
+
+.doc-scroll .form-control::-moz-placeholder {
+  color: #fff;
+}
+
+
+/* Mozilla Firefox 19+ */
+
+.doc-scroll .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+
+/* Internet Explorer 10-11 */
+
+.doc-scroll .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+
+/* Microsoft Edge */
+
+.doc-scroll input[type=text] {
+  border-bottom: none;
+  padding: 5px;
+  position: relative;
+  top: 3px;
+  color: #fff;
+}
+
+.doc-scroll input[type=text]:focus {
+  border-bottom: none;
+}
+
+.doc-scroll .btn {
+  background-color: #1ba39c;
+  box-shadow: none;
+}
+
+.doc-scroll h1 {
+  border-bottom: 1px solid #ccc;
+}
+
+.scrollbar-docs .scrollbar-topics {
+  position: relative;
+}
+
+.scrollbar-docs .scrollbar-topics .topic {
+  position: absolute;
+  right: 0;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.scrollbar-docs .scrollbar-topics .topic_1 {
+  background-color: #8e00ff;
+}
+
+.scrollbar-docs .scrollbar-topics .topic_2 {
+  background-color: #e6a137;
+}
+
+
+/*  background-color: #8e00ff;*/
+
+.scrollbar-docs .scrollbar-topics h3 {
+  margin-right: 70px;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.scrollbar-docs .scrollbar-topics .date_1,
+.scrollbar-docs .scrollbar-topics .date_2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.scrollbar-docs .scrollbar-topics .date_1 p,
+.scrollbar-docs .scrollbar-topics .date_2 p {
+  color: #8a8a8a;
+}
+
+.scrollbar-docs .scrollbar-topics .date_1 span,
+.scrollbar-docs .scrollbar-topics .date_2 span {
+  color: #45afd0;
+  position: relative;
+  font-size: 12px;
+  right: 5px;
+  top: 6px;
+}
+
+.scrollbar-docs .scrollbar-topics .date_1 {
+  margin-left: 15px;
+}
+
+.scrollbar-docs .scrollbar-topics .info {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15px;
+}
+
+.scrollbar-docs .scrollbar-topics {
+  border-bottom: 1px solid #ececec;
+  margin-top: 20px;
+}
+
+.doc-scroll {
+  padding-bottom: 100px;
+}
+
+.scrollbar-docs {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.scrollbar-docs::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000
+}
+
+.scrollbar-docs::-webkit-scrollbar-thumb {
+  background-color: #1ba39c;
+}
+
+.scroll-pagination {
+  margin-top: 50px;
+}
+
+.scroll-pagination .pagination li {
+  margin-right: 8px;
+}
+
+.scroll-pagination .pagination li:last-child {
+  margin-right: 8px;
+}
+
+.scroll-pagination .page-item.disabled .page-link {
+  color: #ffffff;
+  background-color: #13716c;
+}
+
+.scroll-pagination .page-link {
+  color: #fff;
+  background-color: #1ba39c;
+  padding: 12px 15px;
+  border-radius: 50px;
+}
+
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+  border-radius: 50px;
+}
+
+.scroll-pagination .page-link:hover {
+  color: #eceeef;
+  background-color: #1ba39c5c;
+}
+
+.pagination .active .page-link {
+  border-radius: 50px;
+  transition: all 0.2s linear;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #0275d8;
 }
 
 
@@ -5060,6 +5252,9 @@ footer i.right {
   .hover-img-2 .thumbnail:hover .sample-icon {
     opacity: 1;
   }
+  .doc-banner {
+    margin-top: -15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -5201,14 +5396,14 @@ footer i.right {
   .second-footer .row {
     width: inherit;
   }
-  img.img-responsive.center-block.company_1,
-  img.img-responsive.center-block.company_2,
-  img.img-responsive.center-block.company_3,
-  img.img-responsive.center-block.company_4 {
-    width: 150px;
+  img.img-responsive.doc-imgs.red_rocket {
+    height: 87%;
+    background-color: #1d8093;
   }
-  img.img-responsive.center-block.company_4 {
-    width: 100px;
+  li.fix_height_located {
+    height: 15px;
+    position: relative;
+    top: 9px;
   }
 }
 
@@ -5517,6 +5712,10 @@ footer i.right {
   .landing-benefits {
     background-color: #e6ecf1;
   }
+  .button_fix_doc {
+    position: relative;
+    bottom: 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -5699,10 +5898,9 @@ footer i.right {
   .hire-section {
     background-image: none;
   }
-  img.img-responsive.center-block.company_2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+  img.img-responsive.doc-imgs.red_rocket {
+    height: inherit;
+  }
 }
 
 @media (max-width: 660px) {
