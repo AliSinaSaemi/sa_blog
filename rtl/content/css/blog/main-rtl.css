@@ -176,6 +176,80 @@ h6 {
 
 ********************************/
 
+.side_socialmedia {
+  position: fixed;
+  left: 25px;
+  top: 300px;
+  z-index: 3
+}
+
+.side_socialmedia ul {
+  z-index: 2;
+}
+
+.side_socialmedia li {
+  padding: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.side_socialmedia li:last-child:after {
+  display: none;
+}
+
+.side_socialmedia li .facebook {
+  padding: 6px 17px;
+  font-size: 20px;
+  background-color: #1b60a3;
+}
+
+.side_socialmedia li .facebook i {
+  position: relative;
+  top: 3px;
+}
+
+.side_socialmedia li .telegram {
+  padding: 9px 15px;
+  background-color: #399abd;
+}
+
+.side_socialmedia li .telegram i {
+  position: relative;
+  top: 2px;
+  right: 1px;
+}
+
+.side_socialmedia li .twitter {
+  padding: 4px 13px;
+  font-size: 20px;
+  background-color: #4ad7dc;
+}
+
+.side_socialmedia li .twitter i {
+  position: relative;
+  top: 3px;
+}
+
+.side_socialmedia li .google_plus {
+  font-size: 20px;
+  padding: 4px 8px;
+  background-color: #e20f0f;
+}
+
+.side_socialmedia li .google_plus i {
+  position: relative;
+  top: 3px;
+}
+
+.side_socialmedia li .side_social_items {
+  border-radius: 50px;
+  color: #fff;
+}
+
+.side_socialmedia li.fix_google_plus {
+  margin-top: -5px;
+}
+
 .navbar {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
@@ -185,6 +259,68 @@ h6 {
   font-family: 'IRANSans';
   position: relative;
   border-radius: 0;
+}
+
+a.nav-link.nav-searchbox.waves-effect.waves-light {
+  font-size: 17px;
+}
+
+.searchbox_navigation {
+  width: 300px;
+  z-index: 2;
+  padding: 20px;
+  position: absolute;
+  left: -60px;
+  top: 50px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: rgb(27, 163, 156);
+  font-family: 'yekan';
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.searchbox_navigation button {
+  width: 100%;
+  font-family: 'IRANSans';
+  background-color: #093e3b;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  transition: .5s;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.searchbox_navigation input:focus,
+.searchbox_navigation input {
+  background-color: #fff
+}
+
+.searchbox_navigation input {
+  border-radius: 0;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #ffffff;
+  transition: .5s;
+  text-align: center;
+}
+
+.searchbox_navigation input::placeholder {
+  text-align: center
+}
+
+.search-show {
+  opacity: 1;
+  position: absolute;
+  left: -50px;
+}
+
+.nav-searchbox:hover:after,
+.nav-searchbox:focus:after {
+  display: none;
 }
 
 .navbar.navbar-light .nav-item > a {
@@ -4513,10 +4649,11 @@ hr.hr-light {
   background-image: url(../../img/bg/1.png);
   background-repeat: no-repeat;
   background-position: center 13px;
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 160px 0;
   position: relative;
-  border-bottom: 4px solid #bfbfbf;
+  z-index: 1;
+  border-bottom: 45px solid #f1f1f1;
 }
 
 .doc-imgs {
@@ -4554,7 +4691,7 @@ img.red_rocket {
   flex-direction: row-reverse;
   display: flex;
   right: 5px;
-  bottom: -20px;
+  bottom: -65px;
 }
 
 .location_all li.arrow i {
@@ -4771,6 +4908,28 @@ img.red_rocket {
 .page-item.active .page-link {
   color: #fff;
   background-color: #0275d8;
+}
+
+.social_downer .col-3 {
+  padding: 30px 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.social_downer .telegram {
+  background-color: #399abd;
+}
+
+.social_downer .facebook {
+  background-color: #1b60a3;
+}
+
+.social_downer .google_plus {
+  background-color: #e20f0f;
+}
+
+.social_downer .twitter {
+  background-color: #4ad7dc;
 }
 
 
@@ -5404,6 +5563,12 @@ footer i.right {
     height: 15px;
     position: relative;
     top: 9px;
+  }
+  .doc-scroll .search-box {
+    width: 250px;
+  }
+  .location_all {
+    bottom: -70px;
   }
 }
 
