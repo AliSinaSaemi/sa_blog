@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.scrollbar {
+  width: 5px;
+  height: 100%;
+  background-color: #49505a;
+  position: fixed;
+  top: 0;
+  right: 9px;
+  z-index: 1;
+}
+.slider {
+  width: 20px;
+  background-color: #5eaee3;
+  border-radius: 10px;
+  left: -7px;
+}

@@ -17,7 +17,15 @@ $(document).ready(function () {
     topSpacing: 0
   });
 });
+/*=======================
 
+    side social media
+ 
+=======================*/
+$(".closeAndOpen_side_socialmedia").click(function () {
+  $('.side_socialmedia').toggleClass('open_side_socialmedia');
+  $(this).toggleClass('closeAndOpen_side_socialmedia_turn')
+});
 /*=======================
 
      Searchbox show
