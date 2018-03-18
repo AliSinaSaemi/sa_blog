@@ -175,7 +175,7 @@ h6 {
 .side_socialmedia {
   position: fixed;
   left: 7px;
-  top: 43%;
+  top: 175px;
   z-index: 3;
   transition: .5s;
 }
@@ -187,7 +187,7 @@ h6 {
   text-align: center;
   color: #Fff;
   position: fixed;
-  top: 35%;
+  top: 130px;
   font-size: 17px;
   left: 17px;
   font-weight: bold;
@@ -207,7 +207,6 @@ h6 {
 
 .side_socialmedia.open_side_socialmedia {
   left: -50px;
-  top: 43%;
 }
 
 .side_socialmedia ul {
@@ -6660,6 +6659,41 @@ footer i.right {
   }
 }
 
+@media (max-width: 480px) {
+  .avatar_description_xs {
+    text-align: center !important;
+  }
+  .avatar_bio {
+    display: block !important;
+    flex-direction: inherit !important;
+  }
+  .step_specific {
+    display: block;
+  }
+  .step_specific .step_title {
+    position: static;
+    text-align: center;
+  }
+  .steps_right .step_specific {
+    margin-top: -20px;
+  }
+  .step_specific img {
+    margin-bottom: 15px;
+  }
+  .step_specific p {
+    text-align: center;
+    padding: 0;
+    padding-left: 0 !important;
+    padding-bottom: 20px;
+  }
+  .step_specific .step_number {
+    right: 0;
+    margin: auto;
+    left: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
 @media (max-width: 400px) {
   .fly-in-text {
     width: 180px;
@@ -6700,6 +6734,9 @@ footer i.right {
   .steps_gone {
     display: none;
   }
+  .steps_right .step_specific .step_title {
+    right: 28px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -6709,9 +6746,10 @@ footer i.right {
   .steps_carousel .owl-nav {
     display: none;
   }
-.steps_carousel .owl-theme .owl-dots .owl-dot.active span,.steps_carousel .owl-theme .owl-dots .owl-dot:hover span {
+  .steps_carousel .owl-theme .owl-dots .owl-dot.active span,
+  .steps_carousel .owl-theme .owl-dots .owl-dot:hover span {
     background: #1ba39c;
-}
+  }
 }
 
 
