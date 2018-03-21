@@ -199,7 +199,7 @@ h6 {
 .closeAndOpen_side_socialmedia {
   width: 25px;
   height: 25px;
-  background-color: #000;
+  background-color: #1ba39c;
   text-align: center;
   color: #Fff;
   position: fixed;
@@ -1347,6 +1347,7 @@ hr.l-hr-1 {
 .dark-bg .container-fluid {
   z-index: 2;
 }
+
 .landing-contact input[type=text]:focus:not([readonly]),
 .landing-contact input[type=password]:focus:not([readonly]),
 .landing-contact input[type=email]:focus:not([readonly]),
@@ -2904,7 +2905,7 @@ hr.l-hr-1 {
 }
 
 .landing-companies {
-  background-color: #464a50;
+  background-color: #353942;
 }
 
 .landing-companies .prev:hover {
@@ -5070,7 +5071,7 @@ img.red_rocket {
 .avatar_field {
   width: 600px;
   position: absolute;
-  left: 150px;
+  left: 140px;
   top: -95px;
   height: 500px;
 }
@@ -5192,11 +5193,11 @@ img.red_rocket {
 
 .topic_sageteam {
   position: absolute;
-  width: 360px;
+  width: 205px;
   display: block;
   top: -84px;
   margin: auto;
-  left: 0;
+  left: 90px;
   right: 0;
 }
 
@@ -5331,13 +5332,28 @@ img.red_rocket {
   box-shadow: 0 0 0 45px #fff;
   border-radius: 59%;
   background-color: #093e3b;
-  width: 100%;
+  width: 15%;
   position: absolute;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 0;
+  bottom: 0;
   margin: auto;
   display: block;
+  z-index: 2;
+}
+
+.goal_skills_border {
+  border-radius: 59%;
+  width: 15%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  z-index: 3;
 }
 
 .avatar_field_xs {
@@ -5515,10 +5531,13 @@ footer.page-footer {
   line-height: 23px;
   padding: 15px 0;
   position: relative;
-}.first-footer-infos .info.socialmedia ul {
+}
+
+.first-footer-infos .info.socialmedia ul {
   padding-right: 0;
   display: flex;
 }
+
 .first-footer-infos .info.socialmedia ul li {
   width: 38px;
 }
@@ -5672,12 +5691,12 @@ footer i.right {
 }
 
 footer.page-footer .footer-copyright {
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(70, 74, 80);
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(70, 74, 80);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-tags a {
@@ -6428,6 +6447,9 @@ footer.page-footer .footer-copyright {
       bottom: 70px;
     }
   }
+  .social_downer {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6776,14 +6798,7 @@ footer.page-footer .footer-copyright {
   .qualified .developer {
     background-image: none;
   }
-  
 }
-@media (min-width: 575px) {
-    .social_downer {
-    display: none !important;
-  }
-}
-
 
 @media (max-width: 480px) {
   .avatar_description_xs {
