@@ -4730,10 +4730,21 @@ hr.hr-light {
   padding-bottom: 10px;
 }
 
+.doc-section .button_fix_doc {
+  margin-top: -100px;
+}
+
 .doc-imgs {
   width: 100%;
   transition: .5s;
   filter: brightness(100%);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #13716c;
+}
+.pagination .page-item .page-link:hover {
+    color: #13716c;
 }
 
 .topic_title {
