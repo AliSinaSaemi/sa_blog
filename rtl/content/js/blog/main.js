@@ -47,7 +47,7 @@ $(document).ready(function () {
  
 =======================*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   /******************************
       BOTTOM SCROLL TOP BUTTON
    ******************************/
@@ -55,7 +55,7 @@ $(document).ready(function() {
   // declare variable
   var scrollTop = $(".scrollTop");
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     // declare variable
     var topPos = $(this).scrollTop();
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
   }); // scroll END
 
   //Click event to scroll to top
-  $(scrollTop).click(function() {
+  $(scrollTop).click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 800);
@@ -86,7 +86,7 @@ $(document).ready(function() {
   var h2 = $("#h2").position();
   var h3 = $("#h3").position();
 
-  $('.link1').click(function() {
+  $('.link1').click(function () {
     $('html, body').animate({
       scrollTop: h1.top
     }, 500);
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
   }); // left menu link2 click() scroll END
 
-  $('.link2').click(function() {
+  $('.link2').click(function () {
     $('html, body').animate({
       scrollTop: h2.top
     }, 500);
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
   }); // left menu link2 click() scroll END
 
-  $('.link3').click(function() {
+  $('.link3').click(function () {
     $('html, body').animate({
       scrollTop: h3.top
     }, 500);
@@ -295,7 +295,6 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 });
 
 
-
 /*=======================
 
       comapies slider
@@ -363,12 +362,12 @@ $(document).ready(function () {
         items: 3
       }
     }
-  });  
+  });
   $('.owl-three').owlCarousel({
-    rtl:true,
-    loop:true,
-    margin:10,
-    nav:true,
+    rtl: true,
+    loop: true,
+    margin: 10,
+    nav: true,
     responsive: {
       0: {
         items: 1
@@ -382,10 +381,10 @@ $(document).ready(function () {
     }
   });
   $('.owl-four').owlCarousel({
-    rtl:true,
-    loop:true,
-    margin:10,
-    nav:true,
+    rtl: true,
+    loop: true,
+    margin: 10,
+    nav: true,
     responsive: {
       0: {
         items: 1
@@ -395,6 +394,28 @@ $(document).ready(function () {
       },
       1000: {
         items: 3
+      }
+    }
+  });
+  $('.owl-five').owlCarousel({
+    rtl: true,
+    items: 2,
+    itemsDesktop: [1000, 2], // 2 items between 1000px and 901px
+    itemsDesktopSmall: [900, 2], // betweem 900px and 601px
+    itemsTablet: [700, 1], // 2 items between 600 and 480
+    itemsMobile: [479, 1], // 1 item between 479 and 0
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1000: {
+        items: 1
       }
     }
   });
