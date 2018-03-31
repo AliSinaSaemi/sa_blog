@@ -49,7 +49,14 @@ body {
 }
 
 .white {
-  color: #fff;
+  color: #fff !important;
+}
+
+.center-absolute {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
 }
 
 .overflow_hidden {
@@ -79,6 +86,7 @@ b,
 li {
   direction: rtl;
   font-family: 'IRANSans';
+  text-align: right;
 }
 
 html,
@@ -284,7 +292,7 @@ h6 {
 }
 
 .side_socialmedia li .google_plus {
-  font-size: 20px;
+  font-size: 22px;
   padding: 4px 8px;
   background-color: #e20f0f;
 }
@@ -4612,11 +4620,12 @@ hr.hr-light {
 }
 
 .hire-text h2 {
-  color: #ffffff;
-  font-size: 30px;
+  color: #004d66;
+  font-size: 20px;
   line-height: 45px;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .hire-text h5 {
@@ -4630,26 +4639,29 @@ hr.hr-light {
 .hire-text ul li {
   padding-right: 27px;
   position: relative;
-  color: #fff;
+  color: #000;
   line-height: 25px;
   margin-bottom: 15px;
   font-size: 14px;
+  margin-top: 35px;
 }
 
 .hire-text ul li:before {
   font-family: FontAwesome;
-  content: "\f046";
+  content: "\f111";
   position: absolute;
+  color: #1ba39c;
   right: -6px;
   top: 0px;
   font-size: 20px;
 }
 
 .hire-text ul li a {
-  color: #adf3ff;
-  border-bottom: dashed 1px #3ae3ff;
+  color: #1ba39c;
+  border: none;
   margin: 0 2px;
   transition: .4s;
+  font-weight: bold;
 }
 
 .hire-text ul li a:hover {
@@ -5046,6 +5058,50 @@ img.red_rocket {
 
 .work-sample-banner {
   background-image: url(../../img/bg/work-sample.svg);
+}
+
+.contact-us-banner {
+  background-image: url(../../img/bg/banner-contact-us.svg);
+}
+
+.hire-banner {
+  background-image: url(../../img/bg/hire.svg);
+}
+
+.adv-banner {
+  background-image: url(../../img/bg/activities/advertising.svg);
+}
+
+.android-banner {
+  background-image: url(../../img/bg/activities/android.svg)
+}
+
+.anime-banner {
+  background-image: url(../../img/bg/activities/animation.svg);
+}
+
+.illus-banner {
+  background-image: url(../../img/bg/activities/illustration.svg);
+}
+
+.robot-banner {
+  background-image: url(../../img/bg/activities/robot.svg);
+}
+
+.software-banner {
+  background-image: url(../../img/bg/activities/software-01.svg);
+}
+
+.ux-ui-banner {
+  background-image: url(../../img/bg/activities/ux-ui-logo.svg);
+}
+
+.webdesign-banner {
+  background-image: url(../../img/bg/activities/web%20design.svg);
+}
+
+.support-banner {
+  background-image: url(../../img/bg/support.svg);
 }
 
 .work-sample-banner.basic-banner {
@@ -5738,6 +5794,329 @@ img.red_rocket {
   color: #1d8093;
 }
 
+.contact-us-section {
+  text-align: right;
+  padding-bottom: 50px;
+}
+
+.contact-us-section .information li {
+  margin-top: 40px;
+  padding-right: 40px;
+  position: relative;
+  font-size: 14px;
+}
+
+.contact-us-section .information li i {
+  font-size: 35px;
+  right: -10px;
+  top: -4px;
+  color: #1ba39c;
+  position: absolute;
+}
+
+.contact-us-section .information li:nth-child(2) i {
+  right: -13px;
+}
+
+.contact-us-section .l-title {
+  padding-bottom: 1px;
+}
+
+.contact-us-section .l-title h1 {
+  text-align: right !important;
+}
+
+.contact-us-section .l-title hr {
+  width: 100%;
+}
+
+.black-board {
+  margin: 20px;
+  margin-top: 0;
+  padding: 15px;
+  background-color: rgb(29, 128, 147);
+  border-radius: 0 0 5px 5px;
+}
+
+.black-board .md-form label {
+  color: #ffffff;
+}
+
+.contact-us-section .holder {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(18, 77, 97);
+  margin-top: 60px;
+}
+
+.contact-us-section .gireh {
+  height: 60px;
+  width: 5px;
+  background-color: rgb(35, 55, 61);
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.black-board .md-form textarea.md-textarea,
+.black-board .md-form input[type=text] {
+  border-bottom: 3px dotted #fff;
+}
+
+.black-board .md-form input[type=text]:focus:not([readonly]),
+.black-board .md-form input[type=password]:focus:not([readonly]),
+.black-board .md-form input[type=email]:focus:not([readonly]),
+.black-board .md-form input[type=url]:focus:not([readonly]),
+.black-board .md-form input[type=time]:focus:not([readonly]),
+.black-board .md-form input[type=date]:focus:not([readonly]),
+.black-board .md-form input[type=datetime-local]:focus:not([readonly]),
+.black-board .md-form input[type=tel]:focus:not([readonly]),
+.black-board .md-form input[type=number]:focus:not([readonly]),
+.black-board .md-form input[type=search-md]:focus:not([readonly]),
+.black-board .md-form input[type=search]:focus:not([readonly]),
+.black-board .md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 3px dotted #fff;
+}
+
+.black-board .md-form input[type=text]:focus:not([readonly]) + label,
+.black-board .md-form input[type=password]:focus:not([readonly]) + label,
+.black-board .md-form input[type=email]:focus:not([readonly]) + label,
+.black-board .md-form input[type=url]:focus:not([readonly]) + label,
+.black-board .md-form input[type=time]:focus:not([readonly]) + label,
+.black-board .md-form input[type=date]:focus:not([readonly]) + label,
+.black-board .md-form input[type=datetime-local]:focus:not([readonly]) + label,
+.black-board .md-form input[type=tel]:focus:not([readonly]) + label,
+.black-board .md-form input[type=number]:focus:not([readonly]) + label,
+.black-board .md-form input[type=search-md]:focus:not([readonly]) + label,
+.black-board .md-form input[type=search]:focus:not([readonly]) + label,
+.black-board .md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #fff;
+}
+
+.black-board .btn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: block;
+  width: 200px;
+}
+
+.expectation-table .bg {
+  background-image: url(../../img/bg/expectations.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #000;
+  padding: 200px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 45px 0;
+}
+
+.expectation-table .bg h3.one,
+.expectation-table .bg h3.two,
+.expectation-table .bg p.one,
+.expectation-table .bg p.two {
+  position: absolute;
+}
+
+.expectation-table .bg h3.one,
+.expectation-table .bg h3.two {
+  color: #fff;
+  font-size: 18px;
+  top: 20px;
+}
+
+.expectation-table .bg p.one,
+.expectation-table .bg p.two {
+  color: #fba32a;
+  width: 200px;
+  font-size: 15px;
+  bottom: 20px;
+  margin: 0;
+}
+
+.expectation-table .bg p.one,
+.expectation-table .bg h3.one {
+  right: 20px;
+}
+
+.expectation-table .bg p.two,
+.expectation-table .bg h3.two {
+  left: 20px;
+}
+
+.hire-form-2 .black-board {
+  margin-top: 75px;
+  width: 500px;
+}
+
+.hire-form-2 .black-board h4 {
+  top: 0;
+}
+
+.triangle-blackboard {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 250px 75px 250px;
+  border-color: transparent transparent #1d8093 transparent;
+  position: absolute;
+  top: -75px;
+  right: 0;
+}
+
+.black-board form {
+  margin-top: 30px;
+}
+
+.sign_up_in {
+  margin: 50px 0;
+  margin-bottom: 0;
+}
+
+.sign_up_in .sign_up {
+  border-radius: 0 5px 5px 0;
+}
+
+.sign_up_in .sign_in {
+  border-radius: 5px 0 0 5px;
+  box-shadow: 11px 0px #165b69;
+}
+
+.sign_up_in .sign_up .triangle-blackboard {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 138px 140px 138px 0;
+  border-color: transparent #1d8093 transparent transparent;
+  top: 0;
+  left: -140px;
+}
+
+.sign_up_in .sign_in .triangle-blackboard {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 138px 0 138px 140px;
+  border-color: transparent transparent transparent #1d8093;
+  box-shadow: 0px 0px #000;
+  top: 0;
+  right: -140px;
+  z-index: 2;
+}
+
+.sign_up_in .sign_in .triangle-blackboard.darker {
+  border-color: transparent transparent transparent #165b69;
+  right: -151px;
+  z-index: 1;
+}
+
+.activity-title {
+  text-align: center;
+  margin: 30px auto;
+  margin-top: 45px;
+}
+
+.activity-content {
+  padding: 30px;
+  line-height: 35px;
+  background-color: #f1f1f1;
+}
+
+.activity-content p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.sup-options {
+  padding: 60px 0;
+}
+
+.sup-options .steps_left .step_specific {
+  margin-right: 160px !important;
+  margin-left: 0;
+}
+
+.sup-options .steps_right .step_specific {
+  margin-left: 160px !important;
+  margin-right: 0;
+}
+
+.sup-options .step_specific p {
+  height: 65px;
+  margin-top: 26px;
+  position: relative;
+}
+
+.sup-options .step_specific p span {
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.sup-options .step_specific p a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  margin: auto;
+  text-align: center;
+  top: 41px;
+  background-color: #1ba39c;
+  padding: 1px;
+  width: 45px;
+}
+
+.sup-option-title {
+  margin-bottom: 30px;
+}
+
+.sup-option-title h1 {
+  text-align: right;
+  line-height: 30.5px;
+}
+
+.sup-option-title hr {
+  text-align: right;
+  margin-left: auto;
+  margin-right: inherit;
+}
+
+.sup-option-title .l-title {
+  padding: 0;
+}
+
+.sup-options .step_specific img {
+  width: 92px;
+  height: 74px;
+  margin-top: 18px;
+}
+
+.sup-options .steps_left {
+  margin-top: 0;
+}
+
+.more-box {
+  position: relative;
+  margin-top: 120px;
+}
+
+.more-box a img {
+  width: 50px;
+}
+
+.more-box a {
+  position: absolute;
+  right: 50px;
+  top: -43px;
+}
+
 
 /*******************************FOOTER********************************/
 
@@ -6089,6 +6468,15 @@ footer.page-footer .footer-copyright {
   }
   .doc-card-2-item p {
     font-size: 12px;
+  }
+  .hire-form-2 .black-board {
+    margin-top: 75px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: inherit;
+  }
+  .triangle-blackboard {
+    border-width: 0 200px 75px 200px;
   }
 }
 
@@ -6509,6 +6897,34 @@ footer.page-footer .footer-copyright {
   .ws-p-content,
   .ws-p-title {
     border-radius: 5px;
+  }
+  .contact-us-addresses p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+  }
+  .contact-us-section .information li {
+    margin-top: 15px;
+  }
+  .hire-form-2 .black-board {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sign_up_in h4 {
+    font-size: 16px;
+  }
+  .sup-options .step_specific p {
+    height: auto;
+  }
+  .sup-options .steps_right .step_specific {
+    margin-top: 0;
+  }
+  .sup-options .steps_left .step_specific {
+    margin-right: auto !important;
+  }
+  .sup-options .steps_right .step_specific {
+    margin-left: auto!important;
   }
 }
 
@@ -7081,6 +7497,56 @@ footer.page-footer .footer-copyright {
   .work-sample-field h4 {
     font-size: 17px;
   }
+  .contact-us-section .row {
+    flex-direction: column-reverse !important;
+  }
+  .expectation-table {
+    display: none;
+  }
+  .sign_up_in .sign_up,
+  .sign_up_in .sign_in {
+    width: 500px;
+    margin: 75px auto;
+    display: block;
+  }
+  .sign_up_in {
+    margin: 0;
+  }
+  .sign_up_in .sign_up .triangle-blackboard {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 250px 0 250px;
+    border-color: #1d7f93 transparent transparent transparent;
+    bottom: -100px;
+    top: inherit;
+    right: 0;
+    left: 0;
+  }
+  .sign_up_in .sign_in .triangle-blackboard {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 250px 100px 250px;
+    border-color: transparent transparent #1d7f93 transparent;
+    top: -100px;
+    right: 0;
+    left: 0;
+  }
+  .sign_up_in .sign_in .triangle-blackboard.darker {
+    border-color: transparent transparent #165b69 transparent;
+    top: -111px;
+    z-index: 1;
+    right: 0;
+    left: 0;
+  }
+  .sign_up_in .sign_up {
+    border-radius: 5px 5px 0 0;
+  }
+  .sign_up_in .sign_in {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 -11px #165b69;
+  }
 }
 
 @media (max-width: 660px) {
@@ -7253,6 +7719,7 @@ footer.page-footer .footer-copyright {
   .top-work-samples .col-md-5:first-child {
     margin-top: 0;
   }
+  .fix_location_all .location_all,
   .work-sample-banner .location_all {
     bottom: -30px;
   }
@@ -7262,6 +7729,32 @@ footer.page-footer .footer-copyright {
   .ws-p-view .bg-pc .project {
     top: 9px;
     width: 221px;
+  }
+  .contact-us-section .information li {
+    margin-top: 35px;
+  }
+  .hire-text ul li {
+    margin-top: 15px;
+  }
+  .sign_up_in .sign_up,
+  .sign_up_in .sign_in {
+    width: 290px;
+  }
+  .sign_up_in .sign_in .triangle-blackboard {
+    border-width: 0 145px 75px 145px;
+    top: -75px;
+  }
+  .sign_up_in .sign_in .triangle-blackboard.darker {
+    top: -86px;
+  }
+  .sign_up_in .sign_up .triangle-blackboard {
+    border-width: 100px 145px 0 145px;
+  }
+  .sup-option-title {
+    margin-bottom: 0;
+  }
+  .sup-options .step_specific p a {
+    right: 0;
   }
 }
 
@@ -7300,6 +7793,15 @@ footer.page-footer .footer-copyright {
   }
   .ws-p-content h4 {
     font-size: 12px;
+  }
+  .triangle-blackboard {
+    border-width: 0 145px 75px 145px;
+  }
+  .hire-form-2 .black-board {
+    width: 290px;
+  }
+  .sup-options .step_specific img {
+    width: 100%;
   }
 }
 
@@ -7353,6 +7855,32 @@ footer.page-footer .footer-copyright {
   .ws-p-view .bg-pc .project {
     top: 8px;
     width: 203px;
+  }
+  .contact-us-section .holder {
+    border-radius: 0;
+  }
+  .black-board {
+    margin: 0;
+  }
+  .contact-us-section .container {
+    padding: 0;
+  }
+  .contact-us-section .information li:nth-child(2) i {
+    right: -8px;
+  }
+  .contact-us-section .information li i {
+    font-size: 35px;
+    right: -4px;
+  }
+  .sign_up_in .sign_up,
+  .sign_up_in .sign_in {
+    width: 250px;
+  }
+  .sign_up_in .sign_in .triangle-blackboard {
+    border-width: 0 125px 75px 125px;
+  }
+  .sign_up_in .sign_up .triangle-blackboard {
+    border-width: 100px 125px 0 125px;
   }
 }
 
