@@ -5850,6 +5850,7 @@ img.red_rocket {
   margin-top: 60px;
 }
 
+.customer-system .gireh,
 .contact-us-section .gireh {
   height: 60px;
   width: 5px;
@@ -6115,6 +6116,151 @@ img.red_rocket {
   position: absolute;
   right: 50px;
   top: -43px;
+}
+
+.customer-system .black-board {
+  width: 700px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 180px;
+}
+
+.customer-system .triangle-blackboard {
+  border-width: 0 350px 75px 350px;
+}
+
+.customer-system .gireh {
+  height: 80px;
+}
+
+.customer-system .hook {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 5px #000;
+  border-radius: 50px;
+  top: 71px;
+}
+
+.checkbox-menu {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 25px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  margin-bottom: 0;
+  -ms-user-select: none;
+  user-select: none;
+  color: #FFf;
+}
+
+.checkbox-menu input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-menu .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.checkbox-menu:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-menu input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkbox-menu .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-menu input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-menu .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.code-image {
+  margin: 10px auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.advance-search .black-board {
+  width: 900px;
+  margin: 60px auto;
+}
+
+.advance-search .topic_to_search {
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  margin-top: 35px;
+}
+
+.advance-search .triangle-blackboard {
+  border-width: 0 442px 75px 450px;
+}
+
+.advance-search .black-board {
+  margin-top: 40px;
+}
+
+.advance-search .password {
+  margin-top: 30px;
+  color: #252525 !important;
+}
+
+.advance-search .date-to-date {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advance-search .date-to-date input {
+  width: 100px;
+  padding-bottom: 0;
+}
+
+.advance-search .date-to-date p {
+  color: #fff;
+  margin-top: 5px;
+  position: relative;
+  top: 18px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.advance-search .form-control,
+.advance-search .form-control:focus {
+  color: #fff;
 }
 
 
@@ -6926,6 +7072,23 @@ footer.page-footer .footer-copyright {
   .sup-options .steps_right .step_specific {
     margin-left: auto!important;
   }
+  .customer-system .black-board {
+    width: 500px;
+  }
+  .customer-system .triangle-blackboard {
+    border-width: 0 250px 75px 250px;
+  }
+  .upper-nav ul {
+    text-align: right;
+    margin: 0;
+    margin-left: 50px;
+  }
+  .advance-search .triangle-blackboard {
+    border-width: 0 340px 75px 352px;
+  }
+  .advance-search .black-board {
+    width: 750px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -7547,6 +7710,15 @@ footer.page-footer .footer-copyright {
     border-radius: 0 0 5px 5px;
     box-shadow: 0 -11px #165b69;
   }
+  .advance-search .date-to-date {
+    margin-top: -15px;
+  }
+  .advance-search .black-board {
+    width: 500px;
+  }
+  .advance-search .triangle-blackboard {
+    border-width: 0 250px 75px 250px;
+  }
 }
 
 @media (max-width: 660px) {
@@ -7756,6 +7928,37 @@ footer.page-footer .footer-copyright {
   .sup-options .step_specific p a {
     right: 0;
   }
+  .customer-system .black-board {
+    width: 280px;
+  }
+  .customer-system .triangle-blackboard {
+    border-width: 0 140px 75px 140px;
+  }
+  .code-image {
+    width: 200px;
+  }
+  .checkbox-menu {
+    font-size: 18px;
+  }
+  .sa-header-button i {
+    font-size: 25px;
+  }
+  .sa-header-button {
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .advance-search .triangle-blackboard {
+    border-width: 0 150px 75px 150px;
+  }
+  .advance-search .black-board {
+    width: 300px;
+}
+  .advance-search .date-to-date input {
+    width: 65px;
+}
 }
 
 @media (max-width: 480px) {
